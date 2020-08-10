@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['node_22',['Node',['../class_node.html',1,'']]],
-  ['node_2ecs_23',['Node.cs',['../_node_8cs.html',1,'']]]
+  ['makenewdoxyfile_34',['MakeNewDoxyFile',['../class_doxygen_window.html#abf3c2a3c3a53e6691e58b865da8404de',1,'DoxygenWindow']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pathtodoxygen_85',['PathtoDoxygen',['../class_doxygen_config.html#ad308ed1d0bdb202587fba232b754929f',1,'DoxygenConfig']]],
-  ['project_86',['Project',['../class_doxygen_config.html#ae69318495ba1db9f3a4d88e01764f9b4',1,'DoxygenConfig']]]
+  ['neighbours_123',['neighbours',['../class_node.html#a7f9f08aa2c16744271091b095d4a38c1',1,'Node']]]
 ];

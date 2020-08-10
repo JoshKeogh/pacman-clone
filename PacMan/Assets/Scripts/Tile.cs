@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// The Tile class provides some extra information about the game objects in the maze.
+/// <summary>
 public class Tile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool isPortal, isPellet, isSuperPellet, didConsume;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    /// <summary>
+    /// If this Tile class is attached to a node which is a portal, this object holds the corresponding destination node.
+    /// </summary>
+    /// <value>
+    /// Destination node for a portal node.
+    /// </value>
+    public GameObject portalReceiver;
 }

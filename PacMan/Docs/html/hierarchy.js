@@ -7,7 +7,10 @@ var hierarchy =
       [ "DoxygenWindow", "class_doxygen_window.html", null ]
     ] ],
     [ "MonoBehaviour", null, [
+      [ "GameBoard", "class_game_board.html", null ],
+      [ "Ghost", "class_ghost.html", null ],
       [ "Node", "class_node.html", null ],
+      [ "PacMan", "class_pac_man.html", null ],
       [ "Tile", "class_tile.html", null ]
     ] ]
 ];

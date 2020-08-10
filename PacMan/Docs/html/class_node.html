@@ -82,17 +82,109 @@ $(document).ready(function(){initNavTree('class_node.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Node Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The node class enables creating a graph out of mazes by representing intersections of the hallways as vertices which connect edges.  
+ <a href="class_node.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Node:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_node.png" alt=""/>
  </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7f9f08aa2c16744271091b095d4a38c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a7f9f08aa2c16744271091b095d4a38c1">neighbours</a></td></tr>
+<tr class="memdesc:a7f9f08aa2c16744271091b095d4a38c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of the nodes in the graph which neighbour this node by directly connecting via an edge.  <a href="class_node.html#a7f9f08aa2c16744271091b095d4a38c1">More...</a><br /></td></tr>
+<tr class="separator:a7f9f08aa2c16744271091b095d4a38c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae75d9e8ef6d5e4a68dbac00b742d1d"><td class="memItemLeft" align="right" valign="top">Vector2[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a8ae75d9e8ef6d5e4a68dbac00b742d1d">validDirections</a></td></tr>
+<tr class="memdesc:a8ae75d9e8ef6d5e4a68dbac00b742d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of the possible valid directions along which characters can travel from this node.  <a href="class_node.html#a8ae75d9e8ef6d5e4a68dbac00b742d1d">More...</a><br /></td></tr>
+<tr class="separator:a8ae75d9e8ef6d5e4a68dbac00b742d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22bbd1c719a778d9e1df4dfb9881af49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a22bbd1c719a778d9e1df4dfb9881af49">isPortal</a></td></tr>
+<tr class="memdesc:a22bbd1c719a778d9e1df4dfb9881af49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether this node is a portal.  <a href="class_node.html#a22bbd1c719a778d9e1df4dfb9881af49">More...</a><br /></td></tr>
+<tr class="separator:a22bbd1c719a778d9e1df4dfb9881af49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023293b3cf0398ae437be57342a5da56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a023293b3cf0398ae437be57342a5da56">portalReceiver</a></td></tr>
+<tr class="memdesc:a023293b3cf0398ae437be57342a5da56"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this node is a portal, this object holds the corresponding destination node.  <a href="class_node.html#a023293b3cf0398ae437be57342a5da56">More...</a><br /></td></tr>
+<tr class="separator:a023293b3cf0398ae437be57342a5da56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The node class enables creating a graph out of mazes by representing intersections of the hallways as vertices which connect edges. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a22bbd1c719a778d9e1df4dfb9881af49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22bbd1c719a778d9e1df4dfb9881af49">&#9670;&nbsp;</a></span>isPortal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Node.isPortal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates whether this node is a portal. </p>
+<p>Destination node for a portal node. </p>
+
+</div>
+</div>
+<a id="a7f9f08aa2c16744271091b095d4a38c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f9f08aa2c16744271091b095d4a38c1">&#9670;&nbsp;</a></span>neighbours</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_node.html">Node</a> [] Node.neighbours</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An array of the nodes in the graph which neighbour this node by directly connecting via an edge. </p>
+<p>An array of this node's connected vertices. </p>
+
+</div>
+</div>
+<a id="a023293b3cf0398ae437be57342a5da56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a023293b3cf0398ae437be57342a5da56">&#9670;&nbsp;</a></span>portalReceiver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_node.html">Node</a> Node.portalReceiver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If this node is a portal, this object holds the corresponding destination node. </p>
+<p>Destination node for a portal node. </p>
+
+</div>
+</div>
+<a id="a8ae75d9e8ef6d5e4a68dbac00b742d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae75d9e8ef6d5e4a68dbac00b742d1d">&#9670;&nbsp;</a></span>validDirections</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 [] Node.validDirections</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An array of the possible valid directions along which characters can travel from this node. </p>
+<p>The directions point along an edge and thus prescribe how one moves through a hallway.</p>
+<p>An array of normalized vectors which constrain character movement. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>F:/Projects/PacMan/pacman-clone/PacMan/Assets/Scripts/<a class="el" href="_node_8cs.html">Node.cs</a></li>
 </ul>
@@ -102,7 +194,7 @@ Inheritance diagram for Node:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_node.html">Node</a></li>
-    <li class="footer">Generated on Thu Jul 30 2020 17:46:21 for PacMan by
+    <li class="footer">Generated on Mon Aug 10 2020 22:02:17 for PacMan by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['makenewdoxyfile_21',['MakeNewDoxyFile',['../class_doxygen_window.html#abf3c2a3c3a53e6691e58b865da8404de',1,'DoxygenWindow']]]
+  ['lives_33',['lives',['../class_pac_man.html#a811f40f3d33728e31247c8dbc81a1584',1,'PacMan']]]
 ];

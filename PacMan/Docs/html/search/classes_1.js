@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['node_52',['Node',['../class_node.html',1,'']]]
+  ['gameboard_75',['GameBoard',['../class_game_board.html',1,'']]],
+  ['ghost_76',['Ghost',['../class_ghost.html',1,'']]]
 ];

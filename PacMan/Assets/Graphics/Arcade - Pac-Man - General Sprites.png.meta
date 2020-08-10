@@ -1,0 +1,2018 @@
+fileFormatVersion: 2
+guid: c9a502a3124caa24c9cdd2963e8df6da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3186575185625007550
+    second: Arcade - Pac-Man - General Sprites_0
+  - first:
+      213: 920017232686747848
+    second: Arcade - Pac-Man - General Sprites_1
+  - first:
+      213: -4296956827505345207
+    second: Arcade - Pac-Man - General Sprites_2
+  - first:
+      213: -5596695228494493699
+    second: Arcade - Pac-Man - General Sprites_3
+  - first:
+      213: 4742927278161703594
+    second: Arcade - Pac-Man - General Sprites_4
+  - first:
+      213: 470042211197098921
+    second: Arcade - Pac-Man - General Sprites_5
+  - first:
+      213: 6511874810673123364
+    second: Arcade - Pac-Man - General Sprites_6
+  - first:
+      213: -5455107663911863324
+    second: Arcade - Pac-Man - General Sprites_7
+  - first:
+      213: -6347502839258500428
+    second: Arcade - Pac-Man - General Sprites_8
+  - first:
+      213: 2670241615797156238
+    second: Arcade - Pac-Man - General Sprites_9
+  - first:
+      213: 7066973847881737857
+    second: Arcade - Pac-Man - General Sprites_10
+  - first:
+      213: 5368265272817717067
+    second: Arcade - Pac-Man - General Sprites_11
+  - first:
+      213: -353648725767398399
+    second: Arcade - Pac-Man - General Sprites_12
+  - first:
+      213: -3741878633025017733
+    second: Arcade - Pac-Man - General Sprites_13
+  - first:
+      213: 7530298024726150553
+    second: Arcade - Pac-Man - General Sprites_14
+  - first:
+      213: -3134984100016579493
+    second: Arcade - Pac-Man - General Sprites_15
+  - first:
+      213: 6888441845533393205
+    second: Arcade - Pac-Man - General Sprites_16
+  - first:
+      213: 1709586631340014096
+    second: Arcade - Pac-Man - General Sprites_17
+  - first:
+      213: -7223258115209374156
+    second: Arcade - Pac-Man - General Sprites_18
+  - first:
+      213: 1399484664005929550
+    second: Arcade - Pac-Man - General Sprites_19
+  - first:
+      213: -2009492244379184793
+    second: Arcade - Pac-Man - General Sprites_20
+  - first:
+      213: 5931690697958158157
+    second: Arcade - Pac-Man - General Sprites_21
+  - first:
+      213: -7133805364987671983
+    second: Arcade - Pac-Man - General Sprites_22
+  - first:
+      213: -1921672366530073048
+    second: Arcade - Pac-Man - General Sprites_23
+  - first:
+      213: 6063694233755191457
+    second: Arcade - Pac-Man - General Sprites_24
+  - first:
+      213: -6051052171844097117
+    second: Arcade - Pac-Man - General Sprites_25
+  - first:
+      213: -3077762524733583050
+    second: Arcade - Pac-Man - General Sprites_26
+  - first:
+      213: 6866528455067792620
+    second: Arcade - Pac-Man - General Sprites_27
+  - first:
+      213: 4854111422240277481
+    second: Arcade - Pac-Man - General Sprites_28
+  - first:
+      213: -1345213711309912419
+    second: Arcade - Pac-Man - General Sprites_29
+  - first:
+      213: 5789393292103723564
+    second: Arcade - Pac-Man - General Sprites_30
+  - first:
+      213: 5070572504530980131
+    second: Arcade - Pac-Man - General Sprites_31
+  - first:
+      213: 449274349363423175
+    second: Arcade - Pac-Man - General Sprites_32
+  - first:
+      213: -5113106745079036166
+    second: Arcade - Pac-Man - General Sprites_33
+  - first:
+      213: 6433623844681227848
+    second: Arcade - Pac-Man - General Sprites_34
+  - first:
+      213: -1495728462525322635
+    second: Arcade - Pac-Man - General Sprites_35
+  - first:
+      213: -7437050525307682155
+    second: Arcade - Pac-Man - General Sprites_36
+  - first:
+      213: -7256267210310120126
+    second: Arcade - Pac-Man - General Sprites_37
+  - first:
+      213: 195871199925138489
+    second: Arcade - Pac-Man - General Sprites_38
+  - first:
+      213: 6830833008670061680
+    second: Arcade - Pac-Man - General Sprites_39
+  - first:
+      213: 4589811838273339305
+    second: Arcade - Pac-Man - General Sprites_40
+  - first:
+      213: 5441463177173582964
+    second: Arcade - Pac-Man - General Sprites_41
+  - first:
+      213: 3535152105596362591
+    second: Arcade - Pac-Man - General Sprites_42
+  - first:
+      213: -8525142895808539674
+    second: Arcade - Pac-Man - General Sprites_43
+  - first:
+      213: 4448747827464535363
+    second: Arcade - Pac-Man - General Sprites_44
+  - first:
+      213: -6124899850519978289
+    second: Arcade - Pac-Man - General Sprites_45
+  - first:
+      213: -6908427708681117919
+    second: Arcade - Pac-Man - General Sprites_46
+  - first:
+      213: 2043520143396795029
+    second: Arcade - Pac-Man - General Sprites_47
+  - first:
+      213: -6393636797008962840
+    second: Arcade - Pac-Man - General Sprites_48
+  - first:
+      213: 3015426682906692893
+    second: Arcade - Pac-Man - General Sprites_49
+  - first:
+      213: 6811399805713941422
+    second: Arcade - Pac-Man - General Sprites_50
+  - first:
+      213: -6579839377439467008
+    second: Arcade - Pac-Man - General Sprites_51
+  - first:
+      213: -3135324805705621931
+    second: Arcade - Pac-Man - General Sprites_52
+  - first:
+      213: -2382696902151674983
+    second: Arcade - Pac-Man - General Sprites_53
+  - first:
+      213: 7123821560326228421
+    second: Arcade - Pac-Man - General Sprites_54
+  - first:
+      213: -4080800605244589491
+    second: Arcade - Pac-Man - General Sprites_55
+  - first:
+      213: -5766638638868822167
+    second: Arcade - Pac-Man - General Sprites_56
+  - first:
+      213: 1502796575375534612
+    second: Arcade - Pac-Man - General Sprites_57
+  - first:
+      213: -2007795342715606766
+    second: Arcade - Pac-Man - General Sprites_58
+  - first:
+      213: 5883849525450575909
+    second: Arcade - Pac-Man - General Sprites_59
+  - first:
+      213: 4687237277013634621
+    second: Arcade - Pac-Man - General Sprites_60
+  - first:
+      213: 9035376117202626832
+    second: Arcade - Pac-Man - General Sprites_61
+  - first:
+      213: -7415317362358574263
+    second: Arcade - Pac-Man - General Sprites_62
+  - first:
+      213: 7658090066482859495
+    second: Arcade - Pac-Man - General Sprites_63
+  - first:
+      213: -1726957060721629518
+    second: Arcade - Pac-Man - General Sprites_64
+  - first:
+      213: 5912773711407310057
+    second: Arcade - Pac-Man - General Sprites_65
+  - first:
+      213: -4294495214480617122
+    second: Arcade - Pac-Man - General Sprites_66
+  - first:
+      213: -2240438329918441966
+    second: Arcade - Pac-Man - General Sprites_67
+  - first:
+      213: 5299106468872339886
+    second: Arcade - Pac-Man - General Sprites_68
+  - first:
+      213: -7680433323901596027
+    second: Arcade - Pac-Man - General Sprites_69
+  - first:
+      213: -892211345739297310
+    second: Arcade - Pac-Man - General Sprites_70
+  - first:
+      213: -5668873840229758719
+    second: Arcade - Pac-Man - General Sprites_71
+  - first:
+      213: 2250470268930565974
+    second: Arcade - Pac-Man - General Sprites_72
+  - first:
+      213: 5129495943400251945
+    second: Arcade - Pac-Man - General Sprites_73
+  - first:
+      213: 8764288124013052875
+    second: Arcade - Pac-Man - General Sprites_74
+  - first:
+      213: 1416046611046318122
+    second: Arcade - Pac-Man - General Sprites_75
+  - first:
+      213: -2107857687139183130
+    second: Arcade - Pac-Man - General Sprites_76
+  - first:
+      213: -2770347023461327868
+    second: Arcade - Pac-Man - General Sprites_77
+  - first:
+      213: -8843221142339382579
+    second: Arcade - Pac-Man - General Sprites_78
+  - first:
+      213: -4298245383058838963
+    second: Arcade - Pac-Man - General Sprites_79
+  - first:
+      213: 4036278662629296844
+    second: Arcade - Pac-Man - General Sprites_80
+  - first:
+      213: -8741855601268525070
+    second: Arcade - Pac-Man - General Sprites_81
+  - first:
+      213: -2604138545180787798
+    second: Arcade - Pac-Man - General Sprites_82
+  - first:
+      213: -3664912709270648192
+    second: Arcade - Pac-Man - General Sprites_83
+  - first:
+      213: 1924113049480432407
+    second: Arcade - Pac-Man - General Sprites_84
+  - first:
+      213: 1431077961956712006
+    second: Arcade - Pac-Man - General Sprites_85
+  - first:
+      213: -5635994414183727527
+    second: Arcade - Pac-Man - General Sprites_86
+  - first:
+      213: -7316609599028194161
+    second: Arcade - Pac-Man - General Sprites_87
+  - first:
+      213: -3196353122065174563
+    second: Arcade - Pac-Man - General Sprites_88
+  - first:
+      213: -3590275565620912831
+    second: Arcade - Pac-Man - General Sprites_89
+  - first:
+      213: -3135996361668829673
+    second: Arcade - Pac-Man - General Sprites_90
+  - first:
+      213: -9072288596854443380
+    second: Arcade - Pac-Man - General Sprites_91
+  - first:
+      213: 7640126248289915980
+    second: Arcade - Pac-Man - General Sprites_92
+  - first:
+      213: -4630337107902455187
+    second: Arcade - Pac-Man - General Sprites_93
+  - first:
+      213: 277842995221510681
+    second: Arcade - Pac-Man - General Sprites_94
+  - first:
+      213: -6312080337943542096
+    second: Arcade - Pac-Man - General Sprites_95
+  - first:
+      213: -806764000399313408
+    second: Arcade - Pac-Man - General Sprites_96
+  - first:
+      213: -2451869322944595011
+    second: Arcade - Pac-Man - General Sprites_97
+  - first:
+      213: -5721807126930661511
+    second: Arcade - Pac-Man - General Sprites_98
+  - first:
+      213: 5724478535483103228
+    second: Arcade - Pac-Man - General Sprites_99
+  - first:
+      213: -8460440839913216256
+    second: Arcade - Pac-Man - General Sprites_100
+  - first:
+      213: 8056006033477420380
+    second: Arcade - Pac-Man - General Sprites_101
+  - first:
+      213: -8170490326564870631
+    second: Arcade - Pac-Man - General Sprites_102
+  - first:
+      213: 6898686728558462167
+    second: Arcade - Pac-Man - General Sprites_103
+  - first:
+      213: -2440552880969838827
+    second: Arcade - Pac-Man - General Sprites_104
+  - first:
+      213: 6767188434918426721
+    second: Arcade - Pac-Man - General Sprites_105
+  - first:
+      213: 9036825153859612739
+    second: Arcade - Pac-Man - General Sprites_106
+  - first:
+      213: -1826769039064611369
+    second: Arcade - Pac-Man - General Sprites_107
+  - first:
+      213: -6956892559809923942
+    second: Arcade - Pac-Man - General Sprites_108
+  - first:
+      213: -5157918507458162025
+    second: Arcade - Pac-Man - General Sprites_109
+  - first:
+      213: -1305449587199292647
+    second: Arcade - Pac-Man - General Sprites_110
+  - first:
+      213: 894577077075808766
+    second: Arcade - Pac-Man - General Sprites_111
+  - first:
+      213: -419439749074206127
+    second: Arcade - Pac-Man - General Sprites_112
+  - first:
+      213: 9041092434610640580
+    second: Arcade - Pac-Man - General Sprites_113
+  - first:
+      213: -2908858121280337510
+    second: Arcade - Pac-Man - General Sprites_114
+  - first:
+      213: 72582838085720345
+    second: Arcade - Pac-Man - General Sprites_115
+  - first:
+      213: 1241310568173987856
+    second: Arcade - Pac-Man - General Sprites_116
+  - first:
+      213: 5807186983403021831
+    second: Arcade - Pac-Man - General Sprites_117
+  - first:
+      213: -8080553165288752451
+    second: Arcade - Pac-Man - General Sprites_118
+  - first:
+      213: 6891044713396157439
+    second: Arcade - Pac-Man - General Sprites_119
+  - first:
+      213: -3934114445696296494
+    second: Arcade - Pac-Man - General Sprites_120
+  - first:
+      213: -6162684046678841017
+    second: Arcade - Pac-Man - General Sprites_121
+  - first:
+      213: -2925618101290944660
+    second: Arcade - Pac-Man - General Sprites_122
+  - first:
+      213: 2792867743069727518
+    second: Arcade - Pac-Man - General Sprites_123
+  - first:
+      213: -8172894733454733979
+    second: Arcade - Pac-Man - General Sprites_124
+  - first:
+      213: 5880437313721116412
+    second: Arcade - Pac-Man - General Sprites_125
+  - first:
+      213: -5764851428263180600
+    second: Arcade - Pac-Man - General Sprites_126
+  - first:
+      213: -8003275208223510204
+    second: Arcade - Pac-Man - General Sprites_127
+  - first:
+      213: -7495810091929906581
+    second: Arcade - Pac-Man - General Sprites_128
+  - first:
+      213: 6149274601990725788
+    second: Arcade - Pac-Man - General Sprites_129
+  - first:
+      213: 6749542187956024455
+    second: Arcade - Pac-Man - General Sprites_130
+  - first:
+      213: 1569692752434624265
+    second: Arcade - Pac-Man - General Sprites_131
+  - first:
+      213: 6966229788646020522
+    second: Arcade - Pac-Man - General Sprites_132
+  - first:
+      213: 2395103223777500791
+    second: Arcade - Pac-Man - General Sprites_133
+  - first:
+      213: 3425751669986468064
+    second: Arcade - Pac-Man - General Sprites_134
+  - first:
+      213: -9140282374491416122
+    second: Arcade - Pac-Man - General Sprites_135
+  - first:
+      213: 8651414559611522265
+    second: Arcade - Pac-Man - General Sprites_136
+  - first:
+      213: 6261841448294487539
+    second: Arcade - Pac-Man - General Sprites_137
+  - first:
+      213: 6214293770743286619
+    second: Arcade - Pac-Man - General Sprites_138
+  - first:
+      213: -2883325879362729935
+    second: Arcade - Pac-Man - General Sprites_139
+  - first:
+      213: -3693405731515092501
+    second: Arcade - Pac-Man - General Sprites_140
+  - first:
+      213: -4670443912769776437
+    second: Arcade - Pac-Man - General Sprites_141
+  - first:
+      213: 3900660419448620194
+    second: Arcade - Pac-Man - General Sprites_142
+  - first:
+      213: -5859547747193259211
+    second: Arcade - Pac-Man - General Sprites_143
+  - first:
+      213: -3095782358593300000
+    second: Arcade - Pac-Man - General Sprites_144
+  - first:
+      213: -4513598005120282246
+    second: Arcade - Pac-Man - General Sprites_145
+  - first:
+      213: -2561930560057857382
+    second: Arcade - Pac-Man - General Sprites_146
+  - first:
+      213: 2630907025620669571
+    second: Arcade - Pac-Man - General Sprites_147
+  - first:
+      213: -429825364237035931
+    second: Arcade - Pac-Man - General Sprites_148
+  - first:
+      213: 7458267644890998501
+    second: Arcade - Pac-Man - General Sprites_149
+  - first:
+      213: 5854635360611387865
+    second: Arcade - Pac-Man - General Sprites_150
+  - first:
+      213: -5105551285007758573
+    second: Arcade - Pac-Man - General Sprites_151
+  - first:
+      213: 8175850559243180939
+    second: Arcade - Pac-Man - General Sprites_152
+  - first:
+      213: -8813485813986089883
+    second: Arcade - Pac-Man - General Sprites_153
+  - first:
+      213: -4133208374943298960
+    second: Arcade - Pac-Man - General Sprites_154
+  - first:
+      213: 6591628854843698876
+    second: Arcade - Pac-Man - General Sprites_155
+  - first:
+      213: 4358467332649063953
+    second: Arcade - Pac-Man - General Sprites_156
+  - first:
+      213: 8546523225415855148
+    second: Arcade - Pac-Man - General Sprites_157
+  - first:
+      213: 6572002375219688897
+    second: Arcade - Pac-Man - General Sprites_158
+  - first:
+      213: -5740989428853028833
+    second: Arcade - Pac-Man - General Sprites_159
+  - first:
+      213: -4269698707877529691
+    second: Arcade - Pac-Man - General Sprites_160
+  - first:
+      213: -6164833504690856452
+    second: Arcade - Pac-Man - General Sprites_161
+  - first:
+      213: 4183980903026905792
+    second: Arcade - Pac-Man - General Sprites_162
+  - first:
+      213: 4827212134177190849
+    second: Arcade - Pac-Man - General Sprites_163
+  - first:
+      213: 3077770925612979561
+    second: Arcade - Pac-Man - General Sprites_164
+  - first:
+      213: -3079559150290949659
+    second: Arcade - Pac-Man - General Sprites_165
+  - first:
+      213: 366974387382179474
+    second: Arcade - Pac-Man - General Sprites_166
+  - first:
+      213: -4779002382555180380
+    second: Arcade - Pac-Man - General Sprites_167
+  - first:
+      213: -493487748332827110
+    second: Arcade - Pac-Man - General Sprites_168
+  - first:
+      213: -3679332354516791599
+    second: Arcade - Pac-Man - General Sprites_169
+  - first:
+      213: 8588471085692042567
+    second: Arcade - Pac-Man - General Sprites_170
+  - first:
+      213: 5399591246420914988
+    second: Arcade - Pac-Man - General Sprites_171
+  - first:
+      213: -985190002909519161
+    second: Arcade - Pac-Man - General Sprites_172
+  - first:
+      213: 2102037168750643711
+    second: Arcade - Pac-Man - General Sprites_173
+  - first:
+      213: -2077591447878874096
+    second: Arcade - Pac-Man - General Sprites_174
+  - first:
+      213: -6911534235952472271
+    second: Arcade - Pac-Man - General Sprites_175
+  - first:
+      213: 2082475684215337561
+    second: Arcade - Pac-Man - General Sprites_176
+  - first:
+      213: 1892399151768344890
+    second: Arcade - Pac-Man - General Sprites_177
+  - first:
+      213: 8164658827932133298
+    second: Arcade - Pac-Man - General Sprites_178
+  - first:
+      213: 8359313257588467172
+    second: Arcade - Pac-Man - General Sprites_179
+  - first:
+      213: 8425014089989300889
+    second: Arcade - Pac-Man - General Sprites_180
+  - first:
+      213: 2816960244988946284
+    second: Arcade - Pac-Man - General Sprites_181
+  - first:
+      213: 5840562331812092625
+    second: Arcade - Pac-Man - General Sprites_182
+  - first:
+      213: -891002355404625710
+    second: Arcade - Pac-Man - General Sprites_183
+  - first:
+      213: -2290484821302890462
+    second: Arcade - Pac-Man - General Sprites_184
+  - first:
+      213: -5882806755468854942
+    second: Arcade - Pac-Man - General Sprites_185
+  - first:
+      213: -3865722767642209734
+    second: Arcade - Pac-Man - General Sprites_186
+  - first:
+      213: 3000107230456218571
+    second: Arcade - Pac-Man - General Sprites_187
+  - first:
+      213: 8837922596219599684
+    second: Arcade - Pac-Man - General Sprites_188
+  - first:
+      213: -4714036384274889897
+    second: Arcade - Pac-Man - General Sprites_189
+  - first:
+      213: 4667854852597058305
+    second: Arcade - Pac-Man - General Sprites_190
+  - first:
+      213: 1497484337475270639
+    second: Arcade - Pac-Man - General Sprites_191
+  - first:
+      213: -837137810519158876
+    second: Arcade - Pac-Man - General Sprites_192
+  - first:
+      213: 3002881642667167092
+    second: Arcade - Pac-Man - General Sprites_193
+  - first:
+      213: 6291633356807721830
+    second: Arcade - Pac-Man - General Sprites_194
+  - first:
+      213: -6552742874365140381
+    second: Arcade - Pac-Man - General Sprites_195
+  - first:
+      213: -641157678221606533
+    second: Arcade - Pac-Man - General Sprites_196
+  - first:
+      213: -4956311112814764923
+    second: Arcade - Pac-Man - General Sprites_197
+  - first:
+      213: 4402970959088433483
+    second: Arcade - Pac-Man - General Sprites_198
+  - first:
+      213: 875742071422127694
+    second: Arcade - Pac-Man - General Sprites_199
+  - first:
+      213: 5091644555545584970
+    second: Arcade - Pac-Man - General Sprites_200
+  - first:
+      213: -6380285510262518842
+    second: Arcade - Pac-Man - General Sprites_201
+  - first:
+      213: -9015855495817291956
+    second: Arcade - Pac-Man - General Sprites_202
+  - first:
+      213: -6137433600078206431
+    second: Arcade - Pac-Man - General Sprites_203
+  - first:
+      213: -3468483146081312284
+    second: Arcade - Pac-Man - General Sprites_204
+  - first:
+      213: 3382558547821865254
+    second: Arcade - Pac-Man - General Sprites_205
+  - first:
+      213: 8716696568205165573
+    second: Arcade - Pac-Man - General Sprites_206
+  - first:
+      213: -6677017554316746300
+    second: Arcade - Pac-Man - General Sprites_207
+  - first:
+      213: -3950406656221277072
+    second: Arcade - Pac-Man - General Sprites_208
+  - first:
+      213: -9183007698051195167
+    second: Arcade - Pac-Man - General Sprites_209
+  - first:
+      213: 4472836125518802882
+    second: Arcade - Pac-Man - General Sprites_210
+  - first:
+      213: -2152723014493409801
+    second: Arcade - Pac-Man - General Sprites_211
+  - first:
+      213: 6899829591710396343
+    second: Arcade - Pac-Man - General Sprites_212
+  - first:
+      213: -2633682686851279445
+    second: Arcade - Pac-Man - General Sprites_213
+  - first:
+      213: 8139762954939896436
+    second: Arcade - Pac-Man - General Sprites_214
+  - first:
+      213: -7358152812639350500
+    second: Arcade - Pac-Man - General Sprites_215
+  - first:
+      213: -5667965731526962368
+    second: Arcade - Pac-Man - General Sprites_216
+  - first:
+      213: 6337018087718643207
+    second: Arcade - Pac-Man - General Sprites_217
+  - first:
+      213: -6923594507083885679
+    second: Arcade - Pac-Man - General Sprites_218
+  - first:
+      213: -2781418673750631206
+    second: Arcade - Pac-Man - General Sprites_219
+  - first:
+      213: -4333204401879721867
+    second: Arcade - Pac-Man - General Sprites_220
+  - first:
+      213: 5919332919740387208
+    second: Arcade - Pac-Man - General Sprites_221
+  - first:
+      213: -589910197934173562
+    second: Arcade - Pac-Man - General Sprites_222
+  - first:
+      213: 9182130725726821500
+    second: Arcade - Pac-Man - General Sprites_223
+  - first:
+      213: 8278186444394945758
+    second: Arcade - Pac-Man - General Sprites_224
+  - first:
+      213: 7839019985658815214
+    second: Arcade - Pac-Man - General Sprites_225
+  - first:
+      213: -3838359732746004413
+    second: Arcade - Pac-Man - General Sprites_226
+  - first:
+      213: 5767961490939895692
+    second: Arcade - Pac-Man - General Sprites_227
+  - first:
+      213: 9117841757639529216
+    second: Arcade - Pac-Man - General Sprites_228
+  - first:
+      213: -620072682203335899
+    second: Arcade - Pac-Man - General Sprites_229
+  - first:
+      213: -3918817803113159569
+    second: Arcade - Pac-Man - General Sprites_230
+  - first:
+      213: 5425624250792164635
+    second: Arcade - Pac-Man - General Sprites_231
+  - first:
+      213: -5828247424143282279
+    second: Arcade - Pac-Man - General Sprites_232
+  - first:
+      213: 3531433666990055216
+    second: Arcade - Pac-Man - General Sprites_233
+  - first:
+      213: 7390548803746970881
+    second: Arcade - Pac-Man - General Sprites_234
+  - first:
+      213: 2375154457713387916
+    second: Arcade - Pac-Man - General Sprites_235
+  - first:
+      213: -1700531131588180791
+    second: Arcade - Pac-Man - General Sprites_236
+  - first:
+      213: 9126613296015715858
+    second: Arcade - Pac-Man - General Sprites_237
+  - first:
+      213: -8553022918234301466
+    second: Arcade - Pac-Man - General Sprites_238
+  - first:
+      213: -328666242228397416
+    second: Arcade - Pac-Man - General Sprites_239
+  - first:
+      213: 7360843104019049307
+    second: Arcade - Pac-Man - General Sprites_240
+  - first:
+      213: -6349999391393136317
+    second: Arcade - Pac-Man - General Sprites_241
+  - first:
+      213: 5424056911653658280
+    second: Arcade - Pac-Man - General Sprites_242
+  - first:
+      213: -7996296206129685853
+    second: Arcade - Pac-Man - General Sprites_243
+  - first:
+      213: 8369151981449619899
+    second: Arcade - Pac-Man - General Sprites_244
+  - first:
+      213: 8159567141269951929
+    second: Arcade - Pac-Man - General Sprites_245
+  - first:
+      213: -910905326082899360
+    second: Arcade - Pac-Man - General Sprites_246
+  - first:
+      213: -6333933351857221234
+    second: Arcade - Pac-Man - General Sprites_247
+  - first:
+      213: 4695046343394220195
+    second: Arcade - Pac-Man - General Sprites_248
+  - first:
+      213: -2260496703962327815
+    second: Arcade - Pac-Man - General Sprites_249
+  - first:
+      213: 6137985790518898075
+    second: Arcade - Pac-Man - General Sprites_250
+  - first:
+      213: 3360038908604989174
+    second: Arcade - Pac-Man - General Sprites_251
+  - first:
+      213: -2581553557405361287
+    second: Arcade - Pac-Man - General Sprites_252
+  - first:
+      213: 2590983772638944792
+    second: Arcade - Pac-Man - General Sprites_253
+  - first:
+      213: 856207601502930277
+    second: Arcade - Pac-Man - General Sprites_254
+  - first:
+      213: 303448595555547818
+    second: Arcade - Pac-Man - General Sprites_255
+  - first:
+      213: 3494106772284851690
+    second: Arcade - Pac-Man - General Sprites_256
+  - first:
+      213: -530668798426019142
+    second: Arcade - Pac-Man - General Sprites_257
+  - first:
+      213: -8734945007231213529
+    second: Arcade - Pac-Man - General Sprites_258
+  - first:
+      213: -8106902132893685511
+    second: Arcade - Pac-Man - General Sprites_259
+  - first:
+      213: 5229642514641393379
+    second: Arcade - Pac-Man - General Sprites_260
+  - first:
+      213: -5460564648649208397
+    second: Arcade - Pac-Man - General Sprites_261
+  - first:
+      213: 1093732483279720446
+    second: Arcade - Pac-Man - General Sprites_262
+  - first:
+      213: -7360658324100174013
+    second: Arcade - Pac-Man - General Sprites_263
+  - first:
+      213: -1628786490129348722
+    second: Arcade - Pac-Man - General Sprites_264
+  - first:
+      213: 1851908940429688709
+    second: Arcade - Pac-Man - General Sprites_265
+  - first:
+      213: -7948810483723138693
+    second: Arcade - Pac-Man - General Sprites_266
+  - first:
+      213: -138233958635441751
+    second: Arcade - Pac-Man - General Sprites_267
+  - first:
+      213: -1056812907607411358
+    second: Arcade - Pac-Man - General Sprites_268
+  - first:
+      213: 875092682861760035
+    second: Arcade - Pac-Man - General Sprites_269
+  - first:
+      213: 7762484635668652522
+    second: Arcade - Pac-Man - General Sprites_270
+  - first:
+      213: -740328573858637664
+    second: Arcade - Pac-Man - General Sprites_271
+  - first:
+      213: -2029526429015533439
+    second: Arcade - Pac-Man - General Sprites_272
+  - first:
+      213: 2693282228077126614
+    second: Arcade - Pac-Man - General Sprites_273
+  - first:
+      213: 3043912840334582999
+    second: Arcade - Pac-Man - General Sprites_274
+  - first:
+      213: -6926250622391884240
+    second: Arcade - Pac-Man - General Sprites_275
+  - first:
+      213: 6689435004803502734
+    second: Arcade - Pac-Man - General Sprites_276
+  - first:
+      213: 3145498114878995678
+    second: Arcade - Pac-Man - General Sprites_277
+  - first:
+      213: -3536107955256293015
+    second: Arcade - Pac-Man - General Sprites_278
+  - first:
+      213: -4323036066946025333
+    second: Arcade - Pac-Man - General Sprites_279
+  - first:
+      213: -4949929688386371079
+    second: Arcade - Pac-Man - General Sprites_280
+  - first:
+      213: 2781012171668770524
+    second: Arcade - Pac-Man - General Sprites_281
+  - first:
+      213: 5218771823430525904
+    second: Arcade - Pac-Man - General Sprites_282
+  - first:
+      213: 5009397918161692002
+    second: Arcade - Pac-Man - General Sprites_283
+  - first:
+      213: 2079136828959898726
+    second: Arcade - Pac-Man - General Sprites_284
+  - first:
+      213: 7369855371885034390
+    second: Arcade - Pac-Man - General Sprites_285
+  - first:
+      213: 4627044905093359523
+    second: Arcade - Pac-Man - General Sprites_286
+  - first:
+      213: 5760467251243187112
+    second: Arcade - Pac-Man - General Sprites_287
+  - first:
+      213: 5174786547668451580
+    second: Arcade - Pac-Man - General Sprites_288
+  - first:
+      213: -2083567387385833640
+    second: Arcade - Pac-Man - General Sprites_289
+  - first:
+      213: 1571416710904010716
+    second: Arcade - Pac-Man - General Sprites_290
+  - first:
+      213: 5457786226482787184
+    second: Arcade - Pac-Man - General Sprites_291
+  - first:
+      213: 7731449858139046174
+    second: Arcade - Pac-Man - General Sprites_292
+  - first:
+      213: 2056410834335360400
+    second: Arcade - Pac-Man - General Sprites_293
+  - first:
+      213: 4915160561707501309
+    second: Arcade - Pac-Man - General Sprites_294
+  - first:
+      213: -9036668306894637589
+    second: Arcade - Pac-Man - General Sprites_295
+  - first:
+      213: 1984468039765790770
+    second: Arcade - Pac-Man - General Sprites_296
+  - first:
+      213: -6691376249193787203
+    second: Arcade - Pac-Man - General Sprites_297
+  - first:
+      213: -5457326425516680759
+    second: Arcade - Pac-Man - General Sprites_298
+  - first:
+      213: -3165810596588276320
+    second: Arcade - Pac-Man - General Sprites_299
+  - first:
+      213: -3422430793000017923
+    second: Arcade - Pac-Man - General Sprites_300
+  - first:
+      213: -6335668804782401112
+    second: Arcade - Pac-Man - General Sprites_301
+  - first:
+      213: -4002530827962807482
+    second: Arcade - Pac-Man - General Sprites_302
+  - first:
+      213: -3935969123230624067
+    second: Arcade - Pac-Man - General Sprites_303
+  - first:
+      213: -8854131136975909729
+    second: Arcade - Pac-Man - General Sprites_304
+  - first:
+      213: -5249407055990596227
+    second: Arcade - Pac-Man - General Sprites_305
+  - first:
+      213: 3057473901545053489
+    second: Arcade - Pac-Man - General Sprites_306
+  - first:
+      213: 4252647062531968508
+    second: Arcade - Pac-Man - General Sprites_307
+  - first:
+      213: -5499202011985506167
+    second: Arcade - Pac-Man - General Sprites_308
+  - first:
+      213: 3864411628102903915
+    second: Arcade - Pac-Man - General Sprites_309
+  - first:
+      213: 9170613433064004362
+    second: Arcade - Pac-Man - General Sprites_310
+  - first:
+      213: -8362330661763525449
+    second: Arcade - Pac-Man - General Sprites_311
+  - first:
+      213: -4998276013551150949
+    second: Arcade - Pac-Man - General Sprites_312
+  - first:
+      213: -4206145207913427834
+    second: Arcade - Pac-Man - General Sprites_313
+  - first:
+      213: -5774261263963832285
+    second: Arcade - Pac-Man - General Sprites_314
+  - first:
+      213: 7762691327511926671
+    second: Arcade - Pac-Man - General Sprites_315
+  - first:
+      213: -4632917652024224505
+    second: Arcade - Pac-Man - General Sprites_316
+  - first:
+      213: -5018090632628392420
+    second: Arcade - Pac-Man - General Sprites_317
+  - first:
+      213: 2399889878008517728
+    second: Arcade - Pac-Man - General Sprites_318
+  - first:
+      213: -2212359243512880428
+    second: Arcade - Pac-Man - General Sprites_319
+  - first:
+      213: 4941206179585236720
+    second: Arcade - Pac-Man - General Sprites_320
+  - first:
+      213: 4161314463830466449
+    second: Arcade - Pac-Man - General Sprites_321
+  - first:
+      213: 3038357635257299157
+    second: Arcade - Pac-Man - General Sprites_322
+  - first:
+      213: 6610187425047313213
+    second: Arcade - Pac-Man - General Sprites_323
+  - first:
+      213: -4212736405444023701
+    second: Arcade - Pac-Man - General Sprites_324
+  - first:
+      213: 171780342017280340
+    second: Arcade - Pac-Man - General Sprites_325
+  - first:
+      213: -5793796503445022248
+    second: Arcade - Pac-Man - General Sprites_326
+  - first:
+      213: -2791300401629942404
+    second: Arcade - Pac-Man - General Sprites_327
+  - first:
+      213: -7816595134377723376
+    second: Arcade - Pac-Man - General Sprites_328
+  - first:
+      213: -6367048805811664209
+    second: Arcade - Pac-Man - General Sprites_329
+  - first:
+      213: 6158603513617439965
+    second: Arcade - Pac-Man - General Sprites_330
+  - first:
+      213: -8188370697732150523
+    second: Arcade - Pac-Man - General Sprites_331
+  - first:
+      213: -3785078393436268718
+    second: Arcade - Pac-Man - General Sprites_332
+  - first:
+      213: -3233602887469845318
+    second: Arcade - Pac-Man - General Sprites_333
+  - first:
+      213: -1879219645968910122
+    second: Arcade - Pac-Man - General Sprites_334
+  - first:
+      213: -4772003405166844547
+    second: Arcade - Pac-Man - General Sprites_335
+  - first:
+      213: -9009264087211931963
+    second: Arcade - Pac-Man - General Sprites_336
+  - first:
+      213: 2147772032327485476
+    second: Arcade - Pac-Man - General Sprites_337
+  - first:
+      213: -4838680119294728679
+    second: Arcade - Pac-Man - General Sprites_338
+  - first:
+      213: -3135298510830701359
+    second: Arcade - Pac-Man - General Sprites_339
+  - first:
+      213: 7917480798323968858
+    second: Arcade - Pac-Man - General Sprites_340
+  - first:
+      213: 1944722737916591804
+    second: Arcade - Pac-Man - General Sprites_341
+  - first:
+      213: -1249461761864675271
+    second: Arcade - Pac-Man - General Sprites_342
+  - first:
+      213: -4507019269666771058
+    second: Arcade - Pac-Man - General Sprites_343
+  - first:
+      213: 6849272714755183034
+    second: Arcade - Pac-Man - General Sprites_344
+  - first:
+      213: 5134783200678903554
+    second: Arcade - Pac-Man - General Sprites_345
+  - first:
+      213: -8987474215639548801
+    second: Arcade - Pac-Man - General Sprites_346
+  - first:
+      213: -1599465587048351538
+    second: Arcade - Pac-Man - General Sprites_347
+  - first:
+      213: -2061253395954626703
+    second: Arcade - Pac-Man - General Sprites_348
+  - first:
+      213: -9106445660842182610
+    second: Arcade - Pac-Man - General Sprites_349
+  - first:
+      213: -3706847196496518201
+    second: Arcade - Pac-Man - General Sprites_350
+  - first:
+      213: 5961422472115893520
+    second: Arcade - Pac-Man - General Sprites_351
+  - first:
+      213: -3344953501909886429
+    second: Arcade - Pac-Man - General Sprites_352
+  - first:
+      213: -7981582760279307635
+    second: Arcade - Pac-Man - General Sprites_353
+  - first:
+      213: 8952116242763310005
+    second: Arcade - Pac-Man - General Sprites_354
+  - first:
+      213: 5764199241692241270
+    second: Arcade - Pac-Man - General Sprites_355
+  - first:
+      213: 4673033347383185078
+    second: Arcade - Pac-Man - General Sprites_356
+  - first:
+      213: 5983844266938581961
+    second: Arcade - Pac-Man - General Sprites_357
+  - first:
+      213: 2320103055712110028
+    second: Arcade - Pac-Man - General Sprites_358
+  - first:
+      213: 909097740007906385
+    second: Arcade - Pac-Man - General Sprites_359
+  - first:
+      213: -7468928749022812087
+    second: Arcade - Pac-Man - General Sprites_360
+  - first:
+      213: 1106728826344646208
+    second: Arcade - Pac-Man - General Sprites_361
+  - first:
+      213: 377206838989626735
+    second: Arcade - Pac-Man - General Sprites_362
+  - first:
+      213: 7454659645398680503
+    second: Arcade - Pac-Man - General Sprites_363
+  - first:
+      213: 1930198859684280599
+    second: Arcade - Pac-Man - General Sprites_364
+  - first:
+      213: 5802656830484505697
+    second: Arcade - Pac-Man - General Sprites_365
+  - first:
+      213: -8488067793339939059
+    second: Arcade - Pac-Man - General Sprites_366
+  - first:
+      213: -4366054025000025244
+    second: Arcade - Pac-Man - General Sprites_367
+  - first:
+      213: 4164543103123746003
+    second: Arcade - Pac-Man - General Sprites_368
+  - first:
+      213: 6787159435901642599
+    second: Arcade - Pac-Man - General Sprites_369
+  - first:
+      213: 3252728795895203006
+    second: Arcade - Pac-Man - General Sprites_370
+  - first:
+      213: 7712559893070688295
+    second: Arcade - Pac-Man - General Sprites_371
+  - first:
+      213: -7734999254058699935
+    second: Arcade - Pac-Man - General Sprites_372
+  - first:
+      213: 824025202705529383
+    second: Arcade - Pac-Man - General Sprites_373
+  - first:
+      213: 3647402134247697755
+    second: Arcade - Pac-Man - General Sprites_374
+  - first:
+      213: 58944270252028212
+    second: Arcade - Pac-Man - General Sprites_375
+  - first:
+      213: -89978288926888712
+    second: Arcade - Pac-Man - General Sprites_376
+  - first:
+      213: -5317670693626471791
+    second: Arcade - Pac-Man - General Sprites_377
+  - first:
+      213: -4426755024077147124
+    second: Arcade - Pac-Man - General Sprites_378
+  - first:
+      213: -2198740429971904013
+    second: Arcade - Pac-Man - General Sprites_379
+  - first:
+      213: 6932722984871452339
+    second: Arcade - Pac-Man - General Sprites_380
+  - first:
+      213: -6968885124737754886
+    second: Arcade - Pac-Man - General Sprites_381
+  - first:
+      213: -8603814147065601026
+    second: Arcade - Pac-Man - General Sprites_382
+  - first:
+      213: 2603319148820121536
+    second: Arcade - Pac-Man - General Sprites_383
+  - first:
+      213: 1109274020365439324
+    second: Arcade - Pac-Man - General Sprites_384
+  - first:
+      213: 1041568430470625440
+    second: Arcade - Pac-Man - General Sprites_385
+  - first:
+      213: -8715145998954346480
+    second: Arcade - Pac-Man - General Sprites_386
+  - first:
+      213: -6478542041395745212
+    second: Arcade - Pac-Man - General Sprites_387
+  - first:
+      213: -2821600180368371662
+    second: Arcade - Pac-Man - General Sprites_388
+  - first:
+      213: 2620280890665776219
+    second: Arcade - Pac-Man - General Sprites_389
+  - first:
+      213: 7685726453690002036
+    second: Arcade - Pac-Man - General Sprites_390
+  - first:
+      213: 6141990106272256917
+    second: Arcade - Pac-Man - General Sprites_391
+  - first:
+      213: -5995188284169865975
+    second: Arcade - Pac-Man - General Sprites_392
+  - first:
+      213: 172023882063963427
+    second: Arcade - Pac-Man - General Sprites_393
+  - first:
+      213: 7898862753591614797
+    second: Arcade - Pac-Man - General Sprites_394
+  - first:
+      213: -1399390782083242151
+    second: Arcade - Pac-Man - General Sprites_395
+  - first:
+      213: 7487920977850780019
+    second: Arcade - Pac-Man - General Sprites_396
+  - first:
+      213: 5309573727060963001
+    second: Arcade - Pac-Man - General Sprites_397
+  - first:
+      213: 8042738503655523445
+    second: Arcade - Pac-Man - General Sprites_398
+  - first:
+      213: 7843784626191939837
+    second: Arcade - Pac-Man - General Sprites_399
+  - first:
+      213: -2016059767718799621
+    second: Arcade - Pac-Man - General Sprites_400
+  - first:
+      213: 1574745150329698526
+    second: Arcade - Pac-Man - General Sprites_401
+  - first:
+      213: 3709124744452243293
+    second: Arcade - Pac-Man - General Sprites_402
+  - first:
+      213: 7585356588501929523
+    second: Arcade - Pac-Man - General Sprites_403
+  - first:
+      213: -7563473888090233777
+    second: Arcade - Pac-Man - General Sprites_404
+  - first:
+      213: -8615840037964892354
+    second: Arcade - Pac-Man - General Sprites_405
+  - first:
+      213: 6596708787181715700
+    second: Arcade - Pac-Man - General Sprites_406
+  - first:
+      213: 2800092285291475038
+    second: Arcade - Pac-Man - General Sprites_407
+  - first:
+      213: -3885314625259764110
+    second: Arcade - Pac-Man - General Sprites_408
+  - first:
+      213: -6368419806213447413
+    second: Arcade - Pac-Man - General Sprites_409
+  - first:
+      213: -2087672207445911901
+    second: Arcade - Pac-Man - General Sprites_410
+  - first:
+      213: -4792243088722870487
+    second: Arcade - Pac-Man - General Sprites_411
+  - first:
+      213: -7024463938369808309
+    second: Arcade - Pac-Man - General Sprites_412
+  - first:
+      213: 1275459002929711354
+    second: Arcade - Pac-Man - General Sprites_413
+  - first:
+      213: 4102123643660165209
+    second: Arcade - Pac-Man - General Sprites_414
+  - first:
+      213: 4534794656751817971
+    second: Arcade - Pac-Man - General Sprites_415
+  - first:
+      213: 8664255334456419495
+    second: Arcade - Pac-Man - General Sprites_416
+  - first:
+      213: 272541591259726829
+    second: Arcade - Pac-Man - General Sprites_417
+  - first:
+      213: 6363454302324122977
+    second: Arcade - Pac-Man - General Sprites_418
+  - first:
+      213: -2931079489524915819
+    second: Arcade - Pac-Man - General Sprites_419
+  - first:
+      213: -7228139046225222383
+    second: Arcade - Pac-Man - General Sprites_420
+  - first:
+      213: 1627279566215303502
+    second: Arcade - Pac-Man - General Sprites_421
+  - first:
+      213: -3861472043213439234
+    second: Arcade - Pac-Man - General Sprites_422
+  - first:
+      213: 8564571377141515536
+    second: Arcade - Pac-Man - General Sprites_423
+  - first:
+      213: 4277902599381222209
+    second: Arcade - Pac-Man - General Sprites_424
+  - first:
+      213: -8185810833772068096
+    second: Arcade - Pac-Man - General Sprites_425
+  - first:
+      213: -6197727335901519553
+    second: Arcade - Pac-Man - General Sprites_426
+  - first:
+      213: 5822338117163898032
+    second: Arcade - Pac-Man - General Sprites_427
+  - first:
+      213: 8514238651698524870
+    second: Arcade - Pac-Man - General Sprites_428
+  - first:
+      213: -487314487484040247
+    second: Arcade - Pac-Man - General Sprites_429
+  - first:
+      213: -8270234303423675209
+    second: Arcade - Pac-Man - General Sprites_430
+  - first:
+      213: -2411144161262504040
+    second: Arcade - Pac-Man - General Sprites_431
+  - first:
+      213: -6095512131910498324
+    second: Arcade - Pac-Man - General Sprites_432
+  - first:
+      213: 7088872390613063824
+    second: Arcade - Pac-Man - General Sprites_433
+  - first:
+      213: 2922236610148355136
+    second: Arcade - Pac-Man - General Sprites_434
+  - first:
+      213: 5352615154290526650
+    second: Arcade - Pac-Man - General Sprites_435
+  - first:
+      213: 7014393906478062309
+    second: Arcade - Pac-Man - General Sprites_436
+  - first:
+      213: 1567463333710969675
+    second: Arcade - Pac-Man - General Sprites_437
+  - first:
+      213: -1079583674317201035
+    second: Arcade - Pac-Man - General Sprites_438
+  - first:
+      213: 8158040315171909989
+    second: Arcade - Pac-Man - General Sprites_439
+  - first:
+      213: -700350841390370491
+    second: Arcade - Pac-Man - General Sprites_440
+  - first:
+      213: -7642316812894501644
+    second: Arcade - Pac-Man - General Sprites_441
+  - first:
+      213: -721140382769211787
+    second: Arcade - Pac-Man - General Sprites_442
+  - first:
+      213: 6665186365970997917
+    second: Arcade - Pac-Man - General Sprites_443
+  - first:
+      213: 5262885017959990689
+    second: Arcade - Pac-Man - General Sprites_444
+  - first:
+      213: 5781618407791030175
+    second: Arcade - Pac-Man - General Sprites_445
+  - first:
+      213: -4844509575456261869
+    second: Arcade - Pac-Man - General Sprites_446
+  - first:
+      213: -8975049025170505827
+    second: Arcade - Pac-Man - General Sprites_447
+  - first:
+      213: 4451644128353251943
+    second: Arcade - Pac-Man - General Sprites_448
+  - first:
+      213: -8528948764411700052
+    second: Arcade - Pac-Man - General Sprites_449
+  - first:
+      213: -3832108703548747657
+    second: Arcade - Pac-Man - General Sprites_450
+  - first:
+      213: 2487830739674902688
+    second: Arcade - Pac-Man - General Sprites_451
+  - first:
+      213: 5905817336349386248
+    second: Arcade - Pac-Man - General Sprites_452
+  - first:
+      213: -4533017900093730297
+    second: Arcade - Pac-Man - General Sprites_453
+  - first:
+      213: -2899783317335205634
+    second: Arcade - Pac-Man - General Sprites_454
+  - first:
+      213: 5861773232239176003
+    second: Arcade - Pac-Man - General Sprites_455
+  - first:
+      213: -802729954248892724
+    second: Arcade - Pac-Man - General Sprites_456
+  - first:
+      213: -6070406535769199554
+    second: Arcade - Pac-Man - General Sprites_457
+  - first:
+      213: -1925992427505170598
+    second: Arcade - Pac-Man - General Sprites_458
+  - first:
+      213: 3275487871720457831
+    second: Arcade - Pac-Man - General Sprites_459
+  - first:
+      213: 2434444800738822447
+    second: Arcade - Pac-Man - General Sprites_460
+  - first:
+      213: -974759272031303059
+    second: Arcade - Pac-Man - General Sprites_461
+  - first:
+      213: 6576564022263501647
+    second: Arcade - Pac-Man - General Sprites_462
+  - first:
+      213: -8533464482789999036
+    second: Arcade - Pac-Man - General Sprites_463
+  - first:
+      213: -5156347240574565392
+    second: Arcade - Pac-Man - General Sprites_464
+  - first:
+      213: -223465952652749138
+    second: Arcade - Pac-Man - General Sprites_465
+  - first:
+      213: 2076674307807639374
+    second: Arcade - Pac-Man - General Sprites_466
+  - first:
+      213: 3838620282023079450
+    second: Arcade - Pac-Man - General Sprites_467
+  - first:
+      213: 2094830611547436085
+    second: Arcade - Pac-Man - General Sprites_468
+  - first:
+      213: -1928155224510025197
+    second: Arcade - Pac-Man - General Sprites_469
+  - first:
+      213: 5322317583393303283
+    second: Arcade - Pac-Man - General Sprites_470
+  - first:
+      213: 5281737438640008433
+    second: Arcade - Pac-Man - General Sprites_471
+  - first:
+      213: -88352406757711419
+    second: Arcade - Pac-Man - General Sprites_472
+  - first:
+      213: -8882297812758398014
+    second: Arcade - Pac-Man - General Sprites_473
+  - first:
+      213: -4096449893320465864
+    second: Arcade - Pac-Man - General Sprites_474
+  - first:
+      213: 2004218612442365173
+    second: Arcade - Pac-Man - General Sprites_475
+  - first:
+      213: 3407958180485364624
+    second: Arcade - Pac-Man - General Sprites_476
+  - first:
+      213: 135021142510355520
+    second: Arcade - Pac-Man - General Sprites_477
+  - first:
+      213: -80356189421222993
+    second: Arcade - Pac-Man - General Sprites_478
+  - first:
+      213: 4609464639413737607
+    second: Arcade - Pac-Man - General Sprites_479
+  - first:
+      213: -3821710084159294031
+    second: Arcade - Pac-Man - General Sprites_480
+  - first:
+      213: -6984176899072709449
+    second: Arcade - Pac-Man - General Sprites_481
+  - first:
+      213: -3960861909186031641
+    second: Arcade - Pac-Man - General Sprites_482
+  - first:
+      213: 7684582361741996233
+    second: Arcade - Pac-Man - General Sprites_483
+  - first:
+      213: 524681502172112750
+    second: Arcade - Pac-Man - General Sprites_484
+  - first:
+      213: -3266958877338158527
+    second: Arcade - Pac-Man - General Sprites_485
+  - first:
+      213: -6787286289505294004
+    second: Arcade - Pac-Man - General Sprites_486
+  - first:
+      213: -5776802045080402791
+    second: Arcade - Pac-Man - General Sprites_487
+  - first:
+      213: 6361714295256318490
+    second: Arcade - Pac-Man - General Sprites_488
+  - first:
+      213: 8310055853121047072
+    second: Arcade - Pac-Man - General Sprites_489
+  - first:
+      213: 6565067561502699506
+    second: Arcade - Pac-Man - General Sprites_490
+  - first:
+      213: -320729805287594338
+    second: Arcade - Pac-Man - General Sprites_491
+  - first:
+      213: 5718947514216431440
+    second: Arcade - Pac-Man - General Sprites_492
+  - first:
+      213: -6998368044410810445
+    second: Arcade - Pac-Man - General Sprites_493
+  - first:
+      213: -3427543379564938204
+    second: Arcade - Pac-Man - General Sprites_494
+  - first:
+      213: -418425656792283963
+    second: Arcade - Pac-Man - General Sprites_495
+  - first:
+      213: 8966912047332585605
+    second: Arcade - Pac-Man - General Sprites_496
+  - first:
+      213: -4834336464151161950
+    second: Arcade - Pac-Man - General Sprites_497
+  - first:
+      213: 3265976345956962199
+    second: Arcade - Pac-Man - General Sprites_498
+  - first:
+      213: -10881923913318486
+    second: Arcade - Pac-Man - General Sprites_499
+  - first:
+      213: 811725593917010564
+    second: Arcade - Pac-Man - General Sprites_500
+  - first:
+      213: 5893218939610089902
+    second: Arcade - Pac-Man - General Sprites_501
+  - first:
+      213: 2189906044486049121
+    second: Arcade - Pac-Man - General Sprites_502
+  - first:
+      213: 1935957932187847113
+    second: Arcade - Pac-Man - General Sprites_503
+  - first:
+      213: -9119782591047325328
+    second: Arcade - Pac-Man - General Sprites_504
+  - first:
+      213: -8484581649848652358
+    second: Arcade - Pac-Man - General Sprites_505
+  - first:
+      213: -4801399380854687582
+    second: Arcade - Pac-Man - General Sprites_506
+  - first:
+      213: -1147299663737577894
+    second: Arcade - Pac-Man - General Sprites_507
+  - first:
+      213: -4499103893294981863
+    second: Arcade - Pac-Man - General Sprites_508
+  - first:
+      213: -2231290734529286654
+    second: Arcade - Pac-Man - General Sprites_509
+  - first:
+      213: -7474016134859585292
+    second: Arcade - Pac-Man - General Sprites_510
+  - first:
+      213: -6663672003715725513
+    second: Arcade - Pac-Man - General Sprites_511
+  - first:
+      213: -5944555874882047118
+    second: Arcade - Pac-Man - General Sprites_512
+  - first:
+      213: -8093463922731252231
+    second: Arcade - Pac-Man - General Sprites_513
+  - first:
+      213: -3562773928014720518
+    second: Arcade - Pac-Man - General Sprites_514
+  - first:
+      213: -6024279431818271930
+    second: Arcade - Pac-Man - General Sprites_515
+  - first:
+      213: 6424776721831056726
+    second: Arcade - Pac-Man - General Sprites_516
+  - first:
+      213: -7234419289577534045
+    second: Arcade - Pac-Man - General Sprites_517
+  - first:
+      213: -5624704582072708405
+    second: Arcade - Pac-Man - General Sprites_518
+  - first:
+      213: 2436770537716919395
+    second: Arcade - Pac-Man - General Sprites_519
+  - first:
+      213: -6438243887055744109
+    second: Arcade - Pac-Man - General Sprites_520
+  - first:
+      213: -4993890648142374809
+    second: Arcade - Pac-Man - General Sprites_521
+  - first:
+      213: -4370822691243399075
+    second: Arcade - Pac-Man - General Sprites_522
+  - first:
+      213: 2893756451219816847
+    second: Arcade - Pac-Man - General Sprites_523
+  - first:
+      213: 4150190694540889237
+    second: Arcade - Pac-Man - General Sprites_524
+  - first:
+      213: 7108224815758182985
+    second: Arcade - Pac-Man - General Sprites_525
+  - first:
+      213: 6128448490620001857
+    second: Arcade - Pac-Man - General Sprites_526
+  - first:
+      213: -527847665668371433
+    second: Arcade - Pac-Man - General Sprites_527
+  - first:
+      213: 6495869480874528380
+    second: Arcade - Pac-Man - General Sprites_528
+  - first:
+      213: -677218273773912915
+    second: Arcade - Pac-Man - General Sprites_529
+  - first:
+      213: 8503945383536916407
+    second: Arcade - Pac-Man - General Sprites_530
+  - first:
+      213: -6805394020063824732
+    second: Arcade - Pac-Man - General Sprites_531
+  - first:
+      213: -4005098117977044960
+    second: Arcade - Pac-Man - General Sprites_532
+  - first:
+      213: -8264723410361826021
+    second: Arcade - Pac-Man - General Sprites_533
+  - first:
+      213: 4436493229903071000
+    second: Arcade - Pac-Man - General Sprites_534
+  - first:
+      213: -6833210197720867229
+    second: Arcade - Pac-Man - General Sprites_535
+  - first:
+      213: 6658916339349663221
+    second: Arcade - Pac-Man - General Sprites_536
+  - first:
+      213: -7297142728560981534
+    second: Arcade - Pac-Man - General Sprites_537
+  - first:
+      213: 6697393865558278799
+    second: Arcade - Pac-Man - General Sprites_538
+  - first:
+      213: 8033887957650734001
+    second: Arcade - Pac-Man - General Sprites_539
+  - first:
+      213: -5167588451273719970
+    second: Arcade - Pac-Man - General Sprites_540
+  - first:
+      213: 3637910606706722624
+    second: Arcade - Pac-Man - General Sprites_541
+  - first:
+      213: 2234110204515219747
+    second: Arcade - Pac-Man - General Sprites_542
+  - first:
+      213: -8553570071417682437
+    second: Arcade - Pac-Man - General Sprites_543
+  - first:
+      213: 1805768654304747612
+    second: Arcade - Pac-Man - General Sprites_544
+  - first:
+      213: 6343482469747111657
+    second: Arcade - Pac-Man - General Sprites_545
+  - first:
+      213: -3851760843148042176
+    second: Arcade - Pac-Man - General Sprites_546
+  - first:
+      213: 7941746074987071751
+    second: Arcade - Pac-Man - General Sprites_547
+  - first:
+      213: 4244684061144077618
+    second: Arcade - Pac-Man - General Sprites_548
+  - first:
+      213: 1844536467068769820
+    second: Arcade - Pac-Man - General Sprites_549
+  - first:
+      213: 556924988157554914
+    second: Arcade - Pac-Man - General Sprites_550
+  - first:
+      213: 3149523145761867307
+    second: Arcade - Pac-Man - General Sprites_551
+  - first:
+      213: -1929967829726075516
+    second: Arcade - Pac-Man - General Sprites_552
+  - first:
+      213: -8205761308386607591
+    second: Arcade - Pac-Man - General Sprites_553
+  - first:
+      213: 9030497693769531116
+    second: Arcade - Pac-Man - General Sprites_554
+  - first:
+      213: 6274752901430552924
+    second: Arcade - Pac-Man - General Sprites_555
+  - first:
+      213: 9078513562029760586
+    second: Arcade - Pac-Man - General Sprites_556
+  - first:
+      213: -4885274880676783525
+    second: Arcade - Pac-Man - General Sprites_557
+  - first:
+      213: -7047950151984063417
+    second: Arcade - Pac-Man - General Sprites_558
+  - first:
+      213: 8964415451093156175
+    second: Arcade - Pac-Man - General Sprites_559
+  - first:
+      213: 6181989207372950800
+    second: Arcade - Pac-Man - General Sprites_560
+  - first:
+      213: -1071564256735226101
+    second: Arcade - Pac-Man - General Sprites_561
+  - first:
+      213: -1349950233698849581
+    second: Arcade - Pac-Man - General Sprites_562
+  - first:
+      213: 3975618687348942811
+    second: Arcade - Pac-Man - General Sprites_563
+  - first:
+      213: 5634003986145912777
+    second: Arcade - Pac-Man - General Sprites_564
+  - first:
+      213: -7171366015363215033
+    second: Arcade - Pac-Man - General Sprites_565
+  - first:
+      213: -5661713352080494818
+    second: Arcade - Pac-Man - General Sprites_566
+  - first:
+      213: 9096932735641136788
+    second: Arcade - Pac-Man - General Sprites_567
+  - first:
+      213: 9064012052824818418
+    second: Arcade - Pac-Man - General Sprites_568
+  - first:
+      213: 9045106413542960111
+    second: Arcade - Pac-Man - General Sprites_569
+  - first:
+      213: -7786102861025748229
+    second: Arcade - Pac-Man - General Sprites_570
+  - first:
+      213: -7394713384370550060
+    second: Arcade - Pac-Man - General Sprites_571
+  - first:
+      213: -4515303208877857882
+    second: Arcade - Pac-Man - General Sprites_572
+  - first:
+      213: 8350661296314636977
+    second: Arcade - Pac-Man - General Sprites_573
+  - first:
+      213: -7699525331315730521
+    second: Arcade - Pac-Man - General Sprites_574
+  - first:
+      213: -8538818947938046934
+    second: Arcade - Pac-Man - General Sprites_575
+  - first:
+      213: 7306780171959575278
+    second: Arcade - Pac-Man - General Sprites_576
+  - first:
+      213: 8204369801332782444
+    second: Arcade - Pac-Man - General Sprites_577
+  - first:
+      213: 5334455157776084262
+    second: Arcade - Pac-Man - General Sprites_578
+  - first:
+      213: 5751749905256833641
+    second: Arcade - Pac-Man - General Sprites_579
+  - first:
+      213: 751322753948172166
+    second: Arcade - Pac-Man - General Sprites_580
+  - first:
+      213: 5780699390432963740
+    second: Arcade - Pac-Man - General Sprites_581
+  - first:
+      213: 2134657922374101809
+    second: Arcade - Pac-Man - General Sprites_582
+  - first:
+      213: -7200158489376227735
+    second: Arcade - Pac-Man - General Sprites_583
+  - first:
+      213: 6161467793172464216
+    second: Arcade - Pac-Man - General Sprites_584
+  - first:
+      213: -1739701659557468684
+    second: Arcade - Pac-Man - General Sprites_585
+  - first:
+      213: 1978933506837971840
+    second: Arcade - Pac-Man - General Sprites_586
+  - first:
+      213: 4644675558868780173
+    second: Arcade - Pac-Man - General Sprites_587
+  - first:
+      213: -654246093034984179
+    second: Arcade - Pac-Man - General Sprites_588
+  - first:
+      213: -7356145291939560787
+    second: Arcade - Pac-Man - General Sprites_589
+  - first:
+      213: -8428969967244312149
+    second: Arcade - Pac-Man - General Sprites_590
+  - first:
+      213: -1242630205861571204
+    second: Arcade - Pac-Man - General Sprites_591
+  - first:
+      213: 6138803829818919041
+    second: Arcade - Pac-Man - General Sprites_592
+  - first:
+      213: -7214899942868227751
+    second: Arcade - Pac-Man - General Sprites_593
+  - first:
+      213: -5883937230332999247
+    second: Arcade - Pac-Man - General Sprites_594
+  - first:
+      213: -3231718954036758307
+    second: Arcade - Pac-Man - General Sprites_595
+  - first:
+      213: 3644779516807956574
+    second: Arcade - Pac-Man - General Sprites_596
+  - first:
+      213: -7959272137738779869
+    second: Arcade - Pac-Man - General Sprites_597
+  - first:
+      213: 2709902684072732124
+    second: Arcade - Pac-Man - General Sprites_598
+  - first:
+      213: -7542212246778106075
+    second: Arcade - Pac-Man - General Sprites_599
+  - first:
+      213: -216198913040726760
+    second: Arcade - Pac-Man - General Sprites_600
+  - first:
+      213: 1060519768291861832
+    second: Arcade - Pac-Man - General Sprites_601
+  - first:
+      213: 6001095054604253616
+    second: Arcade - Pac-Man - General Sprites_602
+  - first:
+      213: -7938455008376713959
+    second: Arcade - Pac-Man - General Sprites_603
+  - first:
+      213: -9089869951313804375
+    second: Arcade - Pac-Man - General Sprites_604
+  - first:
+      213: -4059448411087684285
+    second: Arcade - Pac-Man - General Sprites_605
+  - first:
+      213: 5589856831383795293
+    second: Arcade - Pac-Man - General Sprites_606
+  - first:
+      213: -2946212429516218149
+    second: Arcade - Pac-Man - General Sprites_607
+  - first:
+      213: -8802232379264746571
+    second: Arcade - Pac-Man - General Sprites_608
+  - first:
+      213: 7532662012580361477
+    second: Arcade - Pac-Man - General Sprites_609
+  - first:
+      213: -3899052360202063324
+    second: Arcade - Pac-Man - General Sprites_610
+  - first:
+      213: 8002619937457934253
+    second: Arcade - Pac-Man - General Sprites_611
+  - first:
+      213: 4042035081082585751
+    second: Arcade - Pac-Man - General Sprites_612
+  - first:
+      213: 8241468128931889256
+    second: Arcade - Pac-Man - General Sprites_613
+  - first:
+      213: -4853002144698064153
+    second: Arcade - Pac-Man - General Sprites_614
+  - first:
+      213: 7710011244378042567
+    second: Arcade - Pac-Man - General Sprites_615
+  - first:
+      213: 4440732766364906724
+    second: Arcade - Pac-Man - General Sprites_616
+  - first:
+      213: -5415460809613764427
+    second: Arcade - Pac-Man - General Sprites_617
+  - first:
+      213: -7106918114017079590
+    second: Arcade - Pac-Man - General Sprites_618
+  - first:
+      213: -5265446695649844667
+    second: Arcade - Pac-Man - General Sprites_619
+  - first:
+      213: 535669639866323841
+    second: Arcade - Pac-Man - General Sprites_620
+  - first:
+      213: 9213020397777676062
+    second: Arcade - Pac-Man - General Sprites_621
+  - first:
+      213: -5602138324009115473
+    second: Arcade - Pac-Man - General Sprites_622
+  - first:
+      213: 1611686673826609404
+    second: Arcade - Pac-Man - General Sprites_623
+  - first:
+      213: 3903833721337076804
+    second: Arcade - Pac-Man - General Sprites_624
+  - first:
+      213: 5930608744342165423
+    second: Arcade - Pac-Man - General Sprites_625
+  - first:
+      213: -401256495486552459
+    second: Arcade - Pac-Man - General Sprites_626
+  - first:
+      213: -3867572431940750884
+    second: Arcade - Pac-Man - General Sprites_627
+  - first:
+      213: 2178766509050974551
+    second: Arcade - Pac-Man - General Sprites_628
+  - first:
+      213: -5808043665928761860
+    second: Arcade - Pac-Man - General Sprites_629
+  - first:
+      213: -5654489810553180926
+    second: Arcade - Pac-Man - General Sprites_0
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - General Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 680
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d69efd9773781b0800000000000000
+      internalID: -5654489810553180926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

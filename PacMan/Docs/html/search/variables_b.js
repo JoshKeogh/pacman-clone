@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_92',['Version',['../class_doxygen_config.html#af72cbcc553de9766a100f77f90c35626',1,'DoxygenConfig']]]
+  ['themes_134',['Themes',['../class_doxygen_window.html#a2dfb0ba26737a0e996797c2848cc2fc0',1,'DoxygenWindow']]]
 ];
