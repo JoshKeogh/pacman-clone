@@ -17,11 +17,12 @@ public class GameBoard : MonoBehaviour
     /// <value>
     /// Count of pellets in the maze.
     /// </value>
-    public int totalDots
+    public int dotsRemaining
     {
-        get { return _totalDots; }
+        get { return _dotsRemaining; }
     }
-    private int _totalDots;
+    private int _dotsRemaining;
+    public int totalDots;
 
     /// <summary>
     /// The player's score for the board, determined by the amount of consumables eaten.
@@ -55,11 +56,13 @@ public class GameBoard : MonoBehaviour
     void Start()
     {
         Object[] objects = GameObject.FindGameObjectsWithTag("Dot");
-        _totalDots = 0;
+        _dotsRemaining = 0;
         foreach (GameObject obj in objects) {
             dots[Mathf.RoundToInt(obj.transform.position.x), Mathf.RoundToInt(obj.transform.position.y)] = obj;
-            _totalDots++;
+            _dotsRemaining++;
         }
+        totalDots = _dotsRemaining;
+        score = 0;
 
         objects = GameObject.FindGameObjectsWithTag("Node");
         foreach (GameObject obj in objects) {
@@ -82,9 +85,25 @@ public class GameBoard : MonoBehaviour
     /// <pre>
     /// The parameter is a valid position on the board.
     /// </pre>
-    public GameObject GetPelletAtPosition(Vector2 pos)
+    public GameObject ConsumeAtPosition(Vector2 pos)
     {
-        return dots[Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y)];
+        GameObject obj = dots[Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y)];
+
+        if (obj != null) {
+            Consumable pellet = obj.GetComponent<Consumable> ();
+
+            if (pellet != null && !pellet.didConsume) {
+                obj.GetComponent<SpriteRenderer> ().enabled = false;
+                pellet.didConsume = true;
+                
+                score += pellet.pointsValue;
+                Debug.Log("Score: " + score);
+
+                _dotsRemaining--;
+            }
+        }
+
+        return obj;
     }
 
     /// <summary>
@@ -165,7 +184,7 @@ public class GameBoard : MonoBehaviour
     /// <pre>
     /// The node exists.
     /// </pre>
-    private float LengthFromNode(Vector2 pos, Node node)
+    public float LengthFromNode(Vector2 pos, Node node)
     {
         Vector2 diff = pos - (Vector2)node.transform.position;
         return diff.sqrMagnitude;

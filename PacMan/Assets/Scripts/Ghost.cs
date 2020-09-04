@@ -111,7 +111,7 @@ public class Ghost : MonoBehaviour
     /// <post>
     /// The ghost remains within the bounds of the maze.
     /// </post>
-    void Move()
+    protected void Move()
     {
         if (targetNode == null) {
 
@@ -150,7 +150,7 @@ public class Ghost : MonoBehaviour
     /// <pre>
     /// The current node is connected to neighbouring nodes, as to allow directions for the ghost to travel.
     /// </pre>
-    Node ChooseNextNode()
+    protected Node ChooseNextNode()
     {
         Vector2 targetTile = Vector2.zero;
 

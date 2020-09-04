@@ -31,8 +31,6 @@ public class PacMan : MonoBehaviour
     /// </summary>
     public Sprite idleSprite;
 
-    // Count of the number of pellets consumed.
-    private int pelletsConsumed = 0;
     // Objects for keeping track of how the player navigates the maze.
     private Vector2 nextDirection, direction = Vector2.zero;
     private Node previousNode, targetNode;
@@ -290,22 +288,9 @@ public class PacMan : MonoBehaviour
     /// </post>
     void ConsumePellet()
     {
-        GameObject obj = board.GetPelletAtPosition(transform.position);
+        board.ConsumeAtPosition(transform.position);
 
-        if (obj != null) {
-            Tile tile = obj.GetComponent<Tile> ();
-
-            if (tile != null && !tile.didConsume && (tile.isPellet || tile.isSuperPellet)) {
-                    obj.GetComponent<SpriteRenderer> ().enabled = false;
-                    tile.didConsume = true;
-
-                    board.score += 100;
-                    pelletsConsumed++;
-                    Debug.Log("Score: " + board.score);
-            }
-        }
-
-        if (board.totalDots == pelletsConsumed) {
+        if (board.dotsRemaining <= 0) {
             Debug.Log("Game Won!");
         }
     }
