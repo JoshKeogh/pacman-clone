@@ -8,7 +8,7 @@ using UnityEngine;
 /// </summary>
 public class GameBoard : MonoBehaviour
 {
-    protected static int boardWidth = 28;
+    private static int boardWidth = 28;
     private static int boardHeight = 36;
 
     /// <summary>
@@ -120,9 +120,7 @@ public class GameBoard : MonoBehaviour
     /// </pre>
     public Node GetNodeAtPosition(Vector2 pos)
     {
-        Debug.Log(pos);
         GameObject obj = nodes[Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y)];
-        Debug.Log(obj);
         return obj.GetComponent<Node> ();
     }
     

@@ -35,9 +35,10 @@ public class Ghost : MonoBehaviour
     Mode previousMode, currentMode = Mode.Scatter;
 */
 
+    private virtual List<Node> path
     // Objects for keeping track of how the ghost navigates the maze.
-    private Node currentNode, targetNode, previousNode;
-    private Vector2 direction, nextDirection;
+    private virtual Node currentNode, targetNode, previousNode;
+    private virtual Vector2 direction, nextDirection;
     // A reference to the player
     private GameObject pacMan;
     // A reference to the level

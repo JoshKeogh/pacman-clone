@@ -22,7 +22,11 @@ public class Node : MonoBehaviour
     /// <value>
     /// An array of normalized vectors which constrain character movement.
     /// </value>
-    public Vector2[] validDirections;
+    private Vector2[] _validDirections;
+    public Vector2[] validDirections
+    {
+        get { return _validDirections; }
+    }
 
     /// <summary>
     /// Indicates whether this node is a portal.
@@ -53,12 +57,12 @@ public class Node : MonoBehaviour
     /// </post>
     void Start()
     {
-        validDirections = new Vector2[neighbours.Length];
+        _validDirections = new Vector2[neighbours.Length];
 
         for (int i = 0; i < neighbours.Length; i++) {
 
             Vector2 neighbourDirection = neighbours[i].transform.localPosition - transform.localPosition;
-            validDirections[i] = neighbourDirection.normalized;
+            _validDirections[i] = neighbourDirection.normalized;
         }
     }
 

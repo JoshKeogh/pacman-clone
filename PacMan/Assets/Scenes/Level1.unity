@@ -44000,23 +44000,7 @@ MonoBehaviour:
   validDirections: []
   isPortal: 1
   portalReceiver: {fileID: 1591883923}
---- !u!114 &1458495827
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458495824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b6a469e51987c488ae1943a0ef58ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPortal: 1
-  isPellet: 0
-  isSuperPellet: 0
-  didConsume: 0
-  portalReceiver: {fileID: 1591883921}
 --- !u!1 &1460650255
 GameObject:
   m_ObjectHideFlags: 0
@@ -44737,23 +44721,6 @@ MonoBehaviour:
   - {fileID: 1443095819}
   validDirections: []
   isPortal: 0
-  portalReceiver: {fileID: 0}
---- !u!114 &1474328613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474328610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b6a469e51987c488ae1943a0ef58ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPortal: 0
-  isPellet: 0
-  isSuperPellet: 0
-  didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1474653350
 PrefabInstance:
@@ -48410,23 +48377,6 @@ MonoBehaviour:
   validDirections: []
   isPortal: 1
   portalReceiver: {fileID: 1458495826}
---- !u!114 &1591883924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1591883921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b6a469e51987c488ae1943a0ef58ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPortal: 1
-  isPellet: 0
-  isSuperPellet: 0
-  didConsume: 0
-  portalReceiver: {fileID: 1458495824}
 --- !u!1001 &1592161981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54289,6 +54239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dae45b659b455d04faf066ff7611e58d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalDots: 0
   score: 0
 --- !u!4 &1783622814
 Transform:
@@ -60981,6 +60932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  lives: 3
   currentNode: {fileID: 153201999}
   idleSprite: {fileID: 21300000, guid: a4b693b2e956ce246a9186179a9093e2, type: 3}
 --- !u!95 &2012282784
