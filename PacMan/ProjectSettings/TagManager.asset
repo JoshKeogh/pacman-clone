@@ -8,6 +8,9 @@ TagManager:
   - PacMan
   - Board
   - Dot
+  - Timer
+  - Score
+  - Lives
   layers:
   - Default
   - TransparentFX

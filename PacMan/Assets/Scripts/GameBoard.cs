@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using TMPro;
+
 
 
 /// <summary>
@@ -31,6 +35,14 @@ public class GameBoard : MonoBehaviour
     /// The player's score.
     /// </value>
     public int score = 0;
+
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI timerText;
+    public TextMeshProUGUI livesText;
+
+    public float elapsedTime = 0f;
+
+    public int lives = 3;
 
     /// An array referencing nodes within the game board.
     private static GameObject[,] nodes = new GameObject[boardWidth, boardHeight];
@@ -69,7 +81,7 @@ public class GameBoard : MonoBehaviour
             nodes[(int)obj.transform.position.x, (int)obj.transform.position.y] = obj;
         }
     }
-    
+
     /// <summary>
     /// Retrieves the pellet object at a particular position on the game board.
     /// </summary>
@@ -97,7 +109,7 @@ public class GameBoard : MonoBehaviour
                 pellet.didConsume = true;
                 
                 score += pellet.pointsValue;
-                Debug.Log("Score: " + score);
+                scoreText.text = score.ToString();
 
                 _dotsRemaining--;
             }
