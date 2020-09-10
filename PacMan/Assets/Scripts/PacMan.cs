@@ -32,7 +32,7 @@ public class PacMan : MonoBehaviour
     public Sprite idleSprite;
 
     // Objects for keeping track of how the player navigates the maze.
-    protected Vector2 nextDirection, direction = Vector2.zero;
+    private Vector2 nextDirection, direction = Vector2.zero;
     protected Node previousNode, targetNode;
     // A reference to the level
     private GameBoard board;

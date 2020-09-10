@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,14 +36,13 @@ public class GameBoard : MonoBehaviour
     /// The player's score.
     /// </value>
     public int score = 0;
-
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI timerText;
-    public TextMeshProUGUI livesText;
 
-    public float elapsedTime = 0f;
+    public double elapsedTime = 0f;
+    public TextMeshProUGUI timerText;
 
     public int lives = 3;
+    public TextMeshProUGUI livesText;
 
     /// An array referencing nodes within the game board.
     private static GameObject[,] nodes = new GameObject[boardWidth, boardHeight];
@@ -67,7 +67,7 @@ public class GameBoard : MonoBehaviour
     /// </post>
     void Start()
     {
-        Object[] objects = GameObject.FindGameObjectsWithTag("Dot");
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("Dot");
         _dotsRemaining = 0;
         foreach (GameObject obj in objects) {
             dots[Mathf.RoundToInt(obj.transform.position.x), Mathf.RoundToInt(obj.transform.position.y)] = obj;
@@ -82,6 +82,13 @@ public class GameBoard : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        elapsedTime += Time.deltaTime;
+        TimeSpan t = TimeSpan.FromSeconds(elapsedTime);
+        timerText.text = string.Format("{0:00}:{1:00}", t.Minutes, t.Seconds);
+    }
+    
     /// <summary>
     /// Retrieves the pellet object at a particular position on the game board.
     /// </summary>

@@ -50,7 +50,6 @@ public class PathFinding : MonoBehaviour
                     shortestPath.Insert(0, current);
                     current = previous[current];
                 }
-
                 shortestPath.Insert(0, current);
                 break;
             }
