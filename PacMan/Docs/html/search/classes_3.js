@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pacman_78',['PacMan',['../class_pac_man.html',1,'']]]
+  ['gameboard_228',['GameBoard',['../class_game_board.html',1,'']]],
+  ['ghost_229',['Ghost',['../class_ghost.html',1,'']]]
 ];

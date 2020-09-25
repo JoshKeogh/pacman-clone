@@ -25,6 +25,9 @@
 var NAVTREE =
 [
   [ "PacMan", "index.html", [
+    [ "Packages", "namespaces.html", [
+      [ "Packages", "namespaces.html", "namespaces_dup" ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -45,7 +48,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_doxygen_window_8cs.html"
+"_actor_8cs.html",
+"dir_38c0671d8e669cdaf9fe4d0c8e0456be.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,10 +1,21 @@
 var searchData=
 [
-  ['docdirectory_8',['DocDirectory',['../class_doxygen_config.html#aea9ba41fe61487effafbeb77120749f0',1,'DoxygenConfig']]],
-  ['doxygenconfig_9',['DoxygenConfig',['../class_doxygen_config.html',1,'']]],
-  ['doxygenoutputstring_10',['DoxygenOutputString',['../class_doxygen_window.html#a20e7d1bdb1f32c97f600bf0f0bdb2358',1,'DoxygenWindow']]],
-  ['doxygenwindow_11',['DoxygenWindow',['../class_doxygen_window.html',1,'']]],
-  ['doxygenwindow_2ecs_12',['DoxygenWindow.cs',['../_doxygen_window_8cs.html',1,'']]],
-  ['doxyrunner_13',['DoxyRunner',['../class_doxy_runner.html',1,'DoxyRunner'],['../class_doxy_runner.html#aed7742f6732027e7427393d727898eba',1,'DoxyRunner.DoxyRunner()']]],
-  ['doxythreadsafeoutput_14',['DoxyThreadSafeOutput',['../class_doxy_thread_safe_output.html',1,'']]]
+  ['deleteclass_32',['DeleteClass',['../class_node_u_m_l_1_1_node.html#acfed5bc5b5051d39c4753e0d0e58f106',1,'NodeUML.Node.DeleteClass()'],['../class_node_u_m_l_1_1_node_relation.html#adbb02271b1282706cb92b6403227cba1',1,'NodeUML.NodeRelation.DeleteClass()']]],
+  ['deletenodeinfo_33',['DeleteNodeInfo',['../class_node_u_m_l_1_1_node.html#a9fad5c9c3f4f241b36a233c690cb107d',1,'NodeUML::Node']]],
+  ['didconsume_34',['didConsume',['../class_consumable.html#a807d81d8324055344d87677ebcb2e4e2',1,'Consumable']]],
+  ['docdirectory_35',['DocDirectory',['../class_doxygen_config.html#aea9ba41fe61487effafbeb77120749f0',1,'DoxygenConfig']]],
+  ['dotsremaining_36',['dotsRemaining',['../class_game_board.html#acccdf850c3b36303e4d58400463d2d7e',1,'GameBoard']]],
+  ['doxygenconfig_37',['DoxygenConfig',['../class_doxygen_config.html',1,'']]],
+  ['doxygenoutputstring_38',['DoxygenOutputString',['../class_doxygen_window.html#a20e7d1bdb1f32c97f600bf0f0bdb2358',1,'DoxygenWindow']]],
+  ['doxygenwindow_39',['DoxygenWindow',['../class_doxygen_window.html',1,'']]],
+  ['doxygenwindow_2ecs_40',['DoxygenWindow.cs',['../_doxygen_window_8cs.html',1,'']]],
+  ['doxyrunner_41',['DoxyRunner',['../class_doxy_runner.html',1,'DoxyRunner'],['../class_doxy_runner.html#aed7742f6732027e7427393d727898eba',1,'DoxyRunner.DoxyRunner()']]],
+  ['doxythreadsafeoutput_42',['DoxyThreadSafeOutput',['../class_doxy_thread_safe_output.html',1,'']]],
+  ['draw_43',['Draw',['../class_node_u_m_l_1_1_node_info_item.html#ae9588b3bfa072dea4c05104f73dae14f',1,'NodeUML.NodeInfoItem.Draw()'],['../class_node_u_m_l_1_1_actor.html#a0c0f764cdace834ef5235459260bc975',1,'NodeUML.Actor.Draw()'],['../class_node_u_m_l_1_1_use_case.html#a8d1814c07668334a435d2b5fcdad246f',1,'NodeUML.UseCase.Draw()'],['../class_node_u_m_l_1_1_use_case_relation.html#a73779bd59a4c8be97fa7a632fd5be48d',1,'NodeUML.UseCaseRelation.Draw()']]],
+  ['drawnode_44',['DrawNode',['../class_node_u_m_l_1_1_node.html#a07dc9512dea7e272ca71e76b79facd9b',1,'NodeUML::Node']]],
+  ['drawnodecurve_45',['DrawNodeCurve',['../class_draw_utils.html#a95ed76ced4742727f1e702aa56ab778a',1,'DrawUtils']]],
+  ['drawnodes_46',['DrawNodes',['../class_node_u_m_l_1_1_node_controller.html#a928b038b35cabff94674dfc6588d58c1',1,'NodeUML::NodeController']]],
+  ['drawrelation_47',['DrawRelation',['../class_node_u_m_l_1_1_node_relation.html#a58215242170137daaf771472fca94e1c',1,'NodeUML::NodeRelation']]],
+  ['drawutils_48',['DrawUtils',['../class_draw_utils.html',1,'']]],
+  ['drawutils_2ecs_49',['DrawUtils.cs',['../_draw_utils_8cs.html',1,'']]]
 ];

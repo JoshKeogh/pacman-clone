@@ -13,15 +13,7 @@ public class Ghost : MonoBehaviour
     /// <value>
     /// The speed of the ghost.
     /// </value>
-    public float speed = 6.6f;
-
-    /// <summary>
-    /// The Node at which the ghost starts when the level begins, determining their position.
-    /// </summary>
-    /// <value>
-    /// Possibly the default Node for the level, or a saved value if loading a previous game.
-    /// </value>
-    public Node startingNode;
+    public float speed = 3f;
 
 /*
     /// <summary>
@@ -35,14 +27,17 @@ public class Ghost : MonoBehaviour
     Mode previousMode, currentMode = Mode.Scatter;
 */
 
-    private List<Node> path;
     // Objects for keeping track of how the ghost navigates the maze.
+    private List<Node> path;
+    private Vector2 direction;
+    [SerializeField]
     private Node currentNode, targetNode, previousNode;
-    private Vector2 direction, nextDirection;
     // A reference to the player
     private GameObject pacMan;
     // A reference to the level
     private GameBoard board;
+    // A reference to the pathfinding
+    private PathFinding navigation;
 
 
     /// <summary>
@@ -65,21 +60,8 @@ public class Ghost : MonoBehaviour
     {
         pacMan = GameObject.FindGameObjectWithTag("PacMan");
         board = GameObject.FindGameObjectWithTag("Board").GetComponent<GameBoard> ();
-        
-        if (startingNode == null) {
-            Node node = board.GetNodeAtPosition((Vector2)transform.localPosition);
-            if (node != null) {
-                currentNode = node;
-            }
-        }
-        previousNode = currentNode;
-        
-        direction = Vector2.right;
-        targetNode = ChooseNextNode();
-        /*targetNode = board.GetNodeAtPosition((Vector2)pacMan.transform.position);
-        if (targetNode == null && pacMan.GetComponent<PacMan> ().currentNode != null) {
-            targetNode = pacMan.GetComponent<PacMan> ().currentNode;
-        }*/
+        navigation = GameObject.FindGameObjectWithTag("Board").GetComponent<PathFinding> ();
+        direction = (targetNode.transform.position- transform.localPosition).normalized;
     }
 
     /// <summary>
@@ -91,16 +73,7 @@ public class Ghost : MonoBehaviour
     void Update()
     {
         Move();
-        if ((pacMan.transform.localPosition - transform.position).sqrMagnitude < 0.1f) {
-            PacMan pman = pacMan.GetComponent<PacMan> ();
-            pman.lives--;
-            
-            Debug.Log("Lives: " + pman.lives);
-
-            if (pman.lives <= 0) {
-                Debug.Log("Lost Game!");
-            }
-        }
+        
     }
 
     /// <summary>
@@ -115,66 +88,54 @@ public class Ghost : MonoBehaviour
     protected void Move()
     {
         if (targetNode == null) {
-
             targetNode = ChooseNextNode();
 
         } else if (targetNode != currentNode) {
+
             if (board.OverShotTarget(transform.localPosition, targetNode, previousNode)) {
-                currentNode = targetNode;
-
-                transform.localPosition = currentNode.transform.position;
-
-                Node otherPortal = board.GetPortal((Vector2)currentNode.transform.position);
+                Node otherPortal = board.GetPortal((Vector2)targetNode.transform.position);
                 if (otherPortal != null) {
-                    transform.localPosition = otherPortal.transform.position;
                     currentNode = otherPortal;
+                } else {
+                    currentNode = targetNode;
                 }
-
-                targetNode = ChooseNextNode();
+                
+                transform.localPosition = currentNode.transform.position;
+                
                 previousNode = currentNode;
+                targetNode = ChooseNextNode();
                 currentNode = null;
+                
+                if (targetNode != null) {
+                    direction = (targetNode.transform.position - transform.localPosition).normalized;
+                }
             } else {
+
                 transform.localPosition += (Vector3)(direction * speed * Time.deltaTime);
             }
         }
     }
 
-    /// <summary>
-    /// Determine which node should next be targeted as the ghost's destination.
-    /// </summary>
-    /// <return>
-    /// Either a target node which the ghost can travel towards, or null.
-    /// </return>
-    /// <pre>
-    /// A reference to PacMan has been found in the board space.
-    /// </pre>
-    /// <pre>
-    /// The current node is connected to neighbouring nodes, as to allow directions for the ghost to travel.
-    /// </pre>
     protected Node ChooseNextNode()
     {
-        Vector2 targetTile = Vector2.zero;
+        Node target;
 
-        Vector2 targetPosition = new Vector2(Mathf.RoundToInt(pacMan.transform.position.x), Mathf.RoundToInt(pacMan.transform.position.y));
-        Vector2 targetDirection = (targetPosition - (Vector2)transform.position).normalized;
-
-        Node moveToNode = null;
-        
-        if (currentNode != null && currentNode.neighbours != null) {
-            for (int i = 0; i < currentNode.validDirections.Length; i++) {
-                        Debug.Log(currentNode.validDirections[i]);
-                if ((currentNode.validDirections[i].x > 0 && targetDirection.x > 0) ||
-                    (currentNode.validDirections[i].x < 0 && targetDirection.x < 0) ||
-                    (currentNode.validDirections[i].y > 0 && targetDirection.y > 0) ||
-                    (currentNode.validDirections[i].y < 0 && targetDirection.y < 0)) {
-
-                        moveToNode = currentNode.neighbours[i];
-                        direction = currentNode.validDirections[i];
-                        break;
-                }
-            }
+        PacMan pm = pacMan.GetComponent<PacMan> ();
+        if (pm.targetNode != null) {
+            target = pm.targetNode;
+        } else if (pm.currentNode != null) {
+            target = pm.currentNode;
+        } else {
+            target = pm.previousNode;
         }
 
-        return moveToNode;
+        path = navigation.GetShortestPath(previousNode, target);
+
+        target = null;
+        if (path != null && path.Count > 1) {
+            target = path[1];
+        }
+
+        return target;
     }
 }

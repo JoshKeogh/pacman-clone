@@ -24,7 +24,7 @@ public class PacMan : MonoBehaviour
     /// <value>
     /// Possibly the default Node for the level, or a saved value if loading a previous game.
     /// </value>
-    public Node currentNode;
+    public Node currentNode, previousNode, targetNode;
 
     /// <summary>
     /// The sprite which plays when PacMan is idle and not moving.
@@ -33,7 +33,6 @@ public class PacMan : MonoBehaviour
 
     // Objects for keeping track of how the player navigates the maze.
     private Vector2 nextDirection, direction = Vector2.zero;
-    protected Node previousNode, targetNode;
     // A reference to the level
     private GameBoard board;
 
@@ -88,25 +87,18 @@ public class PacMan : MonoBehaviour
     void CheckInput()
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-
             ChangeDirection(Vector2.left);
-
         } else if (Input.GetKeyDown(KeyCode.RightArrow)) {
-
             ChangeDirection(Vector2.right);
-
         } else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-
             ChangeDirection(Vector2.up);
-
         } else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-
             ChangeDirection(Vector2.down);
         }
     }
 
     /// <summary>
-    /// Update the direction in which the player has indicated they would like to travel once reaching the next node.
+    /// Update the direction in which the player has indicated theyD would like to travel once reaching the next node.
     /// </summary>
     /// <param>
     /// The direction in which the user has indicated they would like to change to.
@@ -268,10 +260,8 @@ public class PacMan : MonoBehaviour
     void UpdateAnimationState()
     {
         if (direction == Vector2.zero) {
-
             GetComponent<Animator> ().enabled = false;
             GetComponent<SpriteRenderer> ().sprite = idleSprite;
-
         } else {
             GetComponent<Animator> ().enabled = true;
         }

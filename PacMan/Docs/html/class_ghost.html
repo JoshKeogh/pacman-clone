@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('class_ghost.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_ghost-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Ghost Class Reference</div>  </div>
@@ -106,10 +107,80 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0b8ec180c2f14f5a99c200af4bc54720"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#a0b8ec180c2f14f5a99c200af4bc54720">startingNode</a></td></tr>
 <tr class="memdesc:a0b8ec180c2f14f5a99c200af4bc54720"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_node.html" title="The node class enables creating a graph out of mazes by representing intersections of the hallways as...">Node</a> at which the ghost starts when the level begins, determining their position.  <a href="class_ghost.html#a0b8ec180c2f14f5a99c200af4bc54720">More...</a><br /></td></tr>
 <tr class="separator:a0b8ec180c2f14f5a99c200af4bc54720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aed24dc793ca02b19bf2e610719b9e646"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#aed24dc793ca02b19bf2e610719b9e646">Move</a> ()</td></tr>
+<tr class="memdesc:aed24dc793ca02b19bf2e610719b9e646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the location of the ghost on the board.  <a href="class_ghost.html#aed24dc793ca02b19bf2e610719b9e646">More...</a><br /></td></tr>
+<tr class="separator:aed24dc793ca02b19bf2e610719b9e646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25112096eeef73758ecdcaa0e21a19d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ghost.html#ad25112096eeef73758ecdcaa0e21a19d">ChooseNextNode</a> ()</td></tr>
+<tr class="memdesc:ad25112096eeef73758ecdcaa0e21a19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine which node should next be targeted as the ghost's destination.  <a href="class_ghost.html#ad25112096eeef73758ecdcaa0e21a19d">More...</a><br /></td></tr>
+<tr class="separator:ad25112096eeef73758ecdcaa0e21a19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_ghost.html" title="The Ghost class constitutes the base AI and has functionalities common to all of the ghosts.">Ghost</a> class constitutes the base AI and has functionalities common to all of the ghosts. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad25112096eeef73758ecdcaa0e21a19d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25112096eeef73758ecdcaa0e21a19d">&#9670;&nbsp;</a></span>ChooseNextNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_node.html">Node</a> Ghost.ChooseNextNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine which node should next be targeted as the ghost's destination. </p>
+<p>&lt;return&gt; Either a target node which the ghost can travel towards, or null. &lt;/return&gt; </p><pre>
+A reference to <a class="el" href="class_pac_man.html" title="The PacMan class is the character controller for PacMan; it handles player input which controls the c...">PacMan</a> has been found in the board space.
+</pre> <pre>
+The current node is connected to neighbouring nodes, as to allow directions for the ghost to travel.
+</pre> 
+</div>
+</div>
+<a id="aed24dc793ca02b19bf2e610719b9e646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed24dc793ca02b19bf2e610719b9e646">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ghost.Move </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the location of the ghost on the board. </p>
+<p>Continually head in the direction of a target node if one is selected.</p>
+<p>&lt;post&gt; The ghost has not over shot its target destination node. &lt;/post&gt; &lt;post&gt; The ghost remains within the bounds of the maze. &lt;/post&gt; </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ad096be6b3533f72d385f0f1b37643a46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad096be6b3533f72d385f0f1b37643a46">&#9670;&nbsp;</a></span>speed</h2>
 
@@ -153,7 +224,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ghost.html">Ghost</a></li>
-    <li class="footer">Generated on Mon Aug 10 2020 22:02:17 for PacMan by
+    <li class="footer">Generated on Wed Sep 16 2020 12:23:01 for PacMan by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['totaldots_142',['totalDots',['../class_game_board.html#acd573f00b92ae4e56f074e16c4d260b0',1,'GameBoard']]]
+  ['dotsremaining_456',['dotsRemaining',['../class_game_board.html#acccdf850c3b36303e4d58400463d2d7e',1,'GameBoard']]]
 ];

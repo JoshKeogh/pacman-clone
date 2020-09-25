@@ -1,7 +1,24 @@
 var searchData=
 [
-  ['themes_60',['Themes',['../class_doxygen_window.html#a2dfb0ba26737a0e996797c2848cc2fc0',1,'DoxygenWindow']]],
-  ['tile_61',['Tile',['../class_tile.html',1,'']]],
-  ['tile_2ecs_62',['Tile.cs',['../_tile_8cs.html',1,'']]],
-  ['totaldots_63',['totalDots',['../class_game_board.html#acd573f00b92ae4e56f074e16c4d260b0',1,'GameBoard']]]
+  ['save_167',['Save',['../class_node_u_m_l_1_1_use_case_handler.html#af4c73f9b0636486693fba1d44715151b',1,'NodeUML::UseCaseHandler']]],
+  ['savedata_168',['SaveData',['../class_node_u_m_l_1_1_node_controller.html#aa99c3156f10a08a95f0c6956bcfe2b81',1,'NodeUML::NodeController']]],
+  ['saveinproject_169',['SaveInProject',['../class_node_u_m_l_1_1_save_utility.html#a994dc8e3cc4fc4de40467017ed5b2e7f',1,'NodeUML::SaveUtility']]],
+  ['saveutility_170',['SaveUtility',['../class_node_u_m_l_1_1_save_utility.html',1,'NodeUML']]],
+  ['saveutility_2ecs_171',['SaveUtility.cs',['../_save_utility_8cs.html',1,'']]],
+  ['score_172',['score',['../class_game_board.html#a929016926f0c5bfa5709fcef6cc4fd93',1,'GameBoard']]],
+  ['scoretext_173',['scoreText',['../class_game_board.html#addc0bb1b8e72645737f32d1f06475ff8',1,'GameBoard']]],
+  ['scriptsdirectory_174',['ScriptsDirectory',['../class_doxygen_config.html#aea53b2e7fc0f47a7f658ce25e65c4a09',1,'DoxygenConfig']]],
+  ['selectedtheme_175',['SelectedTheme',['../class_doxygen_window.html#aff9bfc8c7ed3f017a61e67025ea7c99a',1,'DoxygenWindow']]],
+  ['sequence_5fdata_5ffile_176',['SEQUENCE_DATA_FILE',['../class_node_u_m_l_1_1_node_consts.html#a335a400752d220514663a0ad935a95c5',1,'NodeUML::NodeConsts']]],
+  ['setactivesnapeshot_177',['SetActiveSnapeShot',['../class_node_u_m_l_1_1_node_controller.html#abe5bad4e2328a2bb20bb16f7c593d199',1,'NodeUML::NodeController']]],
+  ['setfinished_178',['SetFinished',['../class_doxy_thread_safe_output.html#a97e2149569e2bb5e749851daa2781423',1,'DoxyThreadSafeOutput']]],
+  ['setstarted_179',['SetStarted',['../class_doxy_thread_safe_output.html#ad08186c77f145bc3cb1ddb50259ef589',1,'DoxyThreadSafeOutput']]],
+  ['snapshot_180',['SnapShot',['../class_node_u_m_l_1_1_snap_shot.html',1,'NodeUML.SnapShot'],['../class_node_u_m_l_1_1_snap_shot.html#a0187e84132e0577bbf1b6e3a548d4be4',1,'NodeUML.SnapShot.SnapShot()']]],
+  ['snapshot_2ecs_181',['SnapShot.cs',['../_snap_shot_8cs.html',1,'']]],
+  ['snapshotid_182',['snapShotID',['../class_node_u_m_l_1_1_id_handler.html#a0de41a180f3f4eb1a5f894ec2dfbd443',1,'NodeUML::IdHandler']]],
+  ['snapshotname_183',['snapShotName',['../class_node_u_m_l_1_1_snap_shot.html#ac740f352326601ef738dc24cf8d25dd1',1,'NodeUML::SnapShot']]],
+  ['snapshots_184',['snapShots',['../class_node_u_m_l_1_1_node_controller.html#a27121ce5d22cb28562a91aa7508d81e8',1,'NodeUML::NodeController']]],
+  ['speed_185',['speed',['../class_ghost.html#ad096be6b3533f72d385f0f1b37643a46',1,'Ghost.speed()'],['../class_pac_man.html#a6769b8ecd45653d3b045416ec0d280d6',1,'PacMan.speed()']]],
+  ['startingnode_186',['startingNode',['../class_ghost.html#a0b8ec180c2f14f5a99c200af4bc54720',1,'Ghost']]],
+  ['synopsis_187',['Synopsis',['../class_doxygen_config.html#a2b1926144ba2768c36de32a8d3445567',1,'DoxygenConfig']]]
 ];

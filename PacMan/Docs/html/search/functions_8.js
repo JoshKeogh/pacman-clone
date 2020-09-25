@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['setfinished_105',['SetFinished',['../class_doxy_thread_safe_output.html#a97e2149569e2bb5e749851daa2781423',1,'DoxyThreadSafeOutput']]],
-  ['setstarted_106',['SetStarted',['../class_doxy_thread_safe_output.html#ad08186c77f145bc3cb1ddb50259ef589',1,'DoxyThreadSafeOutput']]]
+  ['makenewdoxyfile_321',['MakeNewDoxyFile',['../class_doxygen_window.html#abf3c2a3c3a53e6691e58b865da8404de',1,'DoxygenWindow']]],
+  ['move_322',['Move',['../class_ghost.html#aed24dc793ca02b19bf2e610719b9e646',1,'Ghost']]]
 ];

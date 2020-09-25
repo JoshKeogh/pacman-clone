@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('class_game_board.html',''); initResiza
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_game_board-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -103,9 +102,9 @@ Inheritance diagram for GameBoard:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a048fb1d0398b8707c1daac0d512a34b9"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#a048fb1d0398b8707c1daac0d512a34b9">GetPelletAtPosition</a> (Vector2 pos)</td></tr>
-<tr class="memdesc:a048fb1d0398b8707c1daac0d512a34b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the pellet object at a particular position on the game board.  <a href="class_game_board.html#a048fb1d0398b8707c1daac0d512a34b9">More...</a><br /></td></tr>
-<tr class="separator:a048fb1d0398b8707c1daac0d512a34b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff60a51a92f5ba85913f61939259873c"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#aff60a51a92f5ba85913f61939259873c">ConsumeAtPosition</a> (Vector2 pos)</td></tr>
+<tr class="memdesc:aff60a51a92f5ba85913f61939259873c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the pellet object at a particular position on the game board.  <a href="class_game_board.html#aff60a51a92f5ba85913f61939259873c">More...</a><br /></td></tr>
+<tr class="separator:aff60a51a92f5ba85913f61939259873c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab185a290fb76d13ef647f6398e1db279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#ab185a290fb76d13ef647f6398e1db279">GetNodeAtPosition</a> (Vector2 pos)</td></tr>
 <tr class="memdesc:ab185a290fb76d13ef647f6398e1db279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the node which is at a position on the game board.  <a href="class_game_board.html#ab185a290fb76d13ef647f6398e1db279">More...</a><br /></td></tr>
 <tr class="separator:ab185a290fb76d13ef647f6398e1db279"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,30 +114,65 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf8cfb0b4a80d7a61901d7ee1f669797"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#adf8cfb0b4a80d7a61901d7ee1f669797">OverShotTarget</a> (Vector2 position, <a class="el" href="class_node.html">Node</a> target, <a class="el" href="class_node.html">Node</a> previous)</td></tr>
 <tr class="memdesc:adf8cfb0b4a80d7a61901d7ee1f669797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the character moved too far and overshot their target node.  <a href="class_game_board.html#adf8cfb0b4a80d7a61901d7ee1f669797">More...</a><br /></td></tr>
 <tr class="separator:adf8cfb0b4a80d7a61901d7ee1f669797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385f8ffb0ba59394bf0678e644e7e395"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#a385f8ffb0ba59394bf0678e644e7e395">LengthFromNode</a> (Vector2 pos, <a class="el" href="class_node.html">Node</a> node)</td></tr>
+<tr class="memdesc:a385f8ffb0ba59394bf0678e644e7e395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the distance between the previous node and a position.  <a href="class_game_board.html#a385f8ffb0ba59394bf0678e644e7e395">More...</a><br /></td></tr>
+<tr class="separator:a385f8ffb0ba59394bf0678e644e7e395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac02b19d1fa8dce2b08e1a4cc8d304cb9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#ac02b19d1fa8dce2b08e1a4cc8d304cb9">GetDistance</a> (Vector2 posA, Vector2 posB)</td></tr>
 <tr class="memdesc:ac02b19d1fa8dce2b08e1a4cc8d304cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the distance between two points.  <a href="class_game_board.html#ac02b19d1fa8dce2b08e1a4cc8d304cb9">More...</a><br /></td></tr>
 <tr class="separator:ac02b19d1fa8dce2b08e1a4cc8d304cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:acd573f00b92ae4e56f074e16c4d260b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#acd573f00b92ae4e56f074e16c4d260b0">totalDots</a></td></tr>
+<tr class="separator:acd573f00b92ae4e56f074e16c4d260b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929016926f0c5bfa5709fcef6cc4fd93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#a929016926f0c5bfa5709fcef6cc4fd93">score</a> = 0</td></tr>
 <tr class="memdesc:a929016926f0c5bfa5709fcef6cc4fd93"><td class="mdescLeft">&#160;</td><td class="mdescRight">The player's score for the board, determined by the amount of consumables eaten.  <a href="class_game_board.html#a929016926f0c5bfa5709fcef6cc4fd93">More...</a><br /></td></tr>
 <tr class="separator:a929016926f0c5bfa5709fcef6cc4fd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a5195fe354f2d097dfe636f342e13169d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#a5195fe354f2d097dfe636f342e13169d">boardWidth</a> = 28</td></tr>
-<tr class="separator:a5195fe354f2d097dfe636f342e13169d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc0bb1b8e72645737f32d1f06475ff8"><td class="memItemLeft" align="right" valign="top">TextMeshProUGUI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#addc0bb1b8e72645737f32d1f06475ff8">scoreText</a></td></tr>
+<tr class="separator:addc0bb1b8e72645737f32d1f06475ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc955fc0f0fa7398cd51decc6369de4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#a9cc955fc0f0fa7398cd51decc6369de4">elapsedTime</a> = 0f</td></tr>
+<tr class="separator:a9cc955fc0f0fa7398cd51decc6369de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed86044e5d9601e8703907bbd31e31a6"><td class="memItemLeft" align="right" valign="top">TextMeshProUGUI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#aed86044e5d9601e8703907bbd31e31a6">timerText</a></td></tr>
+<tr class="separator:aed86044e5d9601e8703907bbd31e31a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3fc9d55429502b8f4ce82065ca01cb6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#ac3fc9d55429502b8f4ce82065ca01cb6">lives</a> = 3</td></tr>
+<tr class="separator:ac3fc9d55429502b8f4ce82065ca01cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae455fc50938a46c734c05609c953d084"><td class="memItemLeft" align="right" valign="top">TextMeshProUGUI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#ae455fc50938a46c734c05609c953d084">livesText</a></td></tr>
+<tr class="separator:ae455fc50938a46c734c05609c953d084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:acd573f00b92ae4e56f074e16c4d260b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#acd573f00b92ae4e56f074e16c4d260b0">totalDots</a><code> [get]</code></td></tr>
-<tr class="memdesc:acd573f00b92ae4e56f074e16c4d260b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of dots or pellets in the maze, which <a class="el" href="class_pac_man.html" title="The PacMan class is the character controller for PacMan; it handles player input which controls the c...">PacMan</a> will need to consume to beat the level.  <a href="class_game_board.html#acd573f00b92ae4e56f074e16c4d260b0">More...</a><br /></td></tr>
-<tr class="separator:acd573f00b92ae4e56f074e16c4d260b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccdf850c3b36303e4d58400463d2d7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_board.html#acccdf850c3b36303e4d58400463d2d7e">dotsRemaining</a><code> [get]</code></td></tr>
+<tr class="memdesc:acccdf850c3b36303e4d58400463d2d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of dots or pellets in the maze, which <a class="el" href="class_pac_man.html" title="The PacMan class is the character controller for PacMan; it handles player input which controls the c...">PacMan</a> will need to consume to beat the level.  <a href="class_game_board.html#acccdf850c3b36303e4d58400463d2d7e">More...</a><br /></td></tr>
+<tr class="separator:acccdf850c3b36303e4d58400463d2d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The game board class stores data relating to a level, such as the dimensions, total number of pellets, and game objects in the space. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aff60a51a92f5ba85913f61939259873c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff60a51a92f5ba85913f61939259873c">&#9670;&nbsp;</a></span>ConsumeAtPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject GameBoard.ConsumeAtPosition </td>
+          <td>(</td>
+          <td class="paramtype">Vector2&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the pellet object at a particular position on the game board. </p>
+<p>The position within the maze to search for a pellet. </p>
+<p>&lt;return&gt; The relevant object if a pellet was found, otherwise null. &lt;/return&gt; </p><pre>
+The <a class="el" href="class_game_board.html" title="The game board class stores data relating to a level, such as the dimensions, total number of pellets...">GameBoard</a> has initialized and the board was populated with the maze objects.
+</pre> <pre>
+The parameter is a valid position on the board.
+</pre> 
+</div>
+</div>
 <a id="ac02b19d1fa8dce2b08e1a4cc8d304cb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac02b19d1fa8dce2b08e1a4cc8d304cb9">&#9670;&nbsp;</a></span>GetDistance()</h2>
 
@@ -194,31 +228,6 @@ GameBoard.board array has been populated with the maze's nodes.
 </pre> 
 </div>
 </div>
-<a id="a048fb1d0398b8707c1daac0d512a34b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a048fb1d0398b8707c1daac0d512a34b9">&#9670;&nbsp;</a></span>GetPelletAtPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameObject GameBoard.GetPelletAtPosition </td>
-          <td>(</td>
-          <td class="paramtype">Vector2&#160;</td>
-          <td class="paramname"><em>pos</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retrieves the pellet object at a particular position on the game board. </p>
-<p>The position within the maze to search for a pellet. </p>
-<p>&lt;return&gt; The relevant object if a pellet was found, otherwise null. &lt;/return&gt; </p><pre>
-The <a class="el" href="class_game_board.html" title="The game board class stores data relating to a level, such as the dimensions, total number of pellets...">GameBoard</a> has initialized and the board was populated with the maze objects.
-</pre> <pre>
-The parameter is a valid position on the board.
-</pre> 
-</div>
-</div>
 <a id="a532c68c01f1300e967d3256cc9b3c437"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a532c68c01f1300e967d3256cc9b3c437">&#9670;&nbsp;</a></span>GetPortal()</h2>
 
@@ -242,6 +251,39 @@ The parameter is a valid position on the board.
 GameBoard.board array has been populated with the maze's nodes.
 </pre> <pre>
 Portal nodes have been connected to their corresponding destination node.
+</pre> 
+</div>
+</div>
+<a id="a385f8ffb0ba59394bf0678e644e7e395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385f8ffb0ba59394bf0678e644e7e395">&#9670;&nbsp;</a></span>LengthFromNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GameBoard.LengthFromNode </td>
+          <td>(</td>
+          <td class="paramtype">Vector2&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a>&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the distance between the previous node and a position. </p>
+<p>Position on the game board to be checked. </p>
+<p>&lt;return&gt; The distance between the target position and previous node. &lt;/return&gt; </p><pre>
+The node exists.
 </pre> 
 </div>
 </div>
@@ -286,24 +328,44 @@ A target node has been set.
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5195fe354f2d097dfe636f342e13169d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5195fe354f2d097dfe636f342e13169d">&#9670;&nbsp;</a></span>boardWidth</h2>
+<a id="a9cc955fc0f0fa7398cd51decc6369de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc955fc0f0fa7398cd51decc6369de4">&#9670;&nbsp;</a></span>elapsedTime</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int GameBoard.boardWidth = 28</td>
+          <td class="memname">double GameBoard.elapsedTime = 0f</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3fc9d55429502b8f4ce82065ca01cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3fc9d55429502b8f4ce82065ca01cb6">&#9670;&nbsp;</a></span>lives</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameBoard.lives = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae455fc50938a46c734c05609c953d084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae455fc50938a46c734c05609c953d084">&#9670;&nbsp;</a></span>livesText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextMeshProUGUI GameBoard.livesText</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -325,9 +387,51 @@ A target node has been set.
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
+<a id="addc0bb1b8e72645737f32d1f06475ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc0bb1b8e72645737f32d1f06475ff8">&#9670;&nbsp;</a></span>scoreText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextMeshProUGUI GameBoard.scoreText</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed86044e5d9601e8703907bbd31e31a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed86044e5d9601e8703907bbd31e31a6">&#9670;&nbsp;</a></span>timerText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextMeshProUGUI GameBoard.timerText</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acd573f00b92ae4e56f074e16c4d260b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd573f00b92ae4e56f074e16c4d260b0">&#9670;&nbsp;</a></span>totalDots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameBoard.totalDots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="acccdf850c3b36303e4d58400463d2d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acccdf850c3b36303e4d58400463d2d7e">&#9670;&nbsp;</a></span>dotsRemaining</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +440,7 @@ A target node has been set.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int GameBoard.totalDots</td>
+          <td class="memname">int GameBoard.dotsRemaining</td>
         </tr>
       </table>
   </td>
@@ -360,7 +464,7 @@ A target node has been set.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_board.html">GameBoard</a></li>
-    <li class="footer">Generated on Mon Aug 10 2020 22:02:17 for PacMan by
+    <li class="footer">Generated on Wed Sep 16 2020 12:23:01 for PacMan by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

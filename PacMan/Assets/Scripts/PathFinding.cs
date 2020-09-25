@@ -20,7 +20,7 @@ public class PathFinding : MonoBehaviour
         }
     }
 
-    public virtual List<Node> GetShortestPath(Node source, Node target)
+    public List<Node> GetShortestPath(Node source, Node target)
     {
         if (source == null || target == null) {
             return null;
@@ -37,7 +37,7 @@ public class PathFinding : MonoBehaviour
             distances.Add(current, float.MaxValue);
         }
         distances[source] = 0;
-
+        
         List<Node> shortestPath = new List<Node> ();
         while (unvisited.Count > 0) {
             unvisited = unvisited.OrderBy(node => distances[node]).ToList();

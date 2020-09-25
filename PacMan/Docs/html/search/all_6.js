@@ -1,12 +1,20 @@
 var searchData=
 [
-  ['gameboard_18',['GameBoard',['../class_game_board.html',1,'']]],
-  ['gameboard_2ecs_19',['GameBoard.cs',['../_game_board_8cs.html',1,'']]],
-  ['generate_20',['Generate',['../class_doxygen_window.html#ad1f6043062e30f52cb634b72294a5676a32b919d18cfaca89383f6000dcc9c031',1,'DoxygenWindow']]],
-  ['getdistance_21',['GetDistance',['../class_game_board.html#ac02b19d1fa8dce2b08e1a4cc8d304cb9',1,'GameBoard']]],
-  ['getnodeatposition_22',['GetNodeAtPosition',['../class_game_board.html#ab185a290fb76d13ef647f6398e1db279',1,'GameBoard']]],
-  ['getpelletatposition_23',['GetPelletAtPosition',['../class_game_board.html#a048fb1d0398b8707c1daac0d512a34b9',1,'GameBoard']]],
-  ['getportal_24',['GetPortal',['../class_game_board.html#a532c68c01f1300e967d3256cc9b3c437',1,'GameBoard']]],
-  ['ghost_25',['Ghost',['../class_ghost.html',1,'']]],
-  ['ghost_2ecs_26',['Ghost.cs',['../_ghost_8cs.html',1,'']]]
+  ['gameboard_56',['GameBoard',['../class_game_board.html',1,'']]],
+  ['gameboard_2ecs_57',['GameBoard.cs',['../_game_board_8cs.html',1,'']]],
+  ['generate_58',['Generate',['../class_doxygen_window.html#ad1f6043062e30f52cb634b72294a5676a32b919d18cfaca89383f6000dcc9c031',1,'DoxygenWindow']]],
+  ['getactorid_59',['GetActorID',['../class_node_u_m_l_1_1_id_handler.html#ab9d6515a5900a0c7be5a8a64900bc32b',1,'NodeUML::IdHandler']]],
+  ['getclassid_60',['GetClassID',['../class_node_u_m_l_1_1_id_handler.html#a30289688abf46d2a349d806006b6cabd',1,'NodeUML::IdHandler']]],
+  ['getcurrentsnapshot_61',['GetCurrentSnapShot',['../class_node_u_m_l_1_1_node_controller.html#a965992b8fa4bf4c25df2182126a7d2e4',1,'NodeUML::NodeController']]],
+  ['getdistance_62',['GetDistance',['../class_game_board.html#ac02b19d1fa8dce2b08e1a4cc8d304cb9',1,'GameBoard']]],
+  ['getinstance_63',['GetInstance',['../class_node_u_m_l_1_1_resources_config.html#a547a21e4cf87627e0b6aa90908204b78',1,'NodeUML.ResourcesConfig.GetInstance()'],['../class_node_u_m_l_1_1_id_handler.html#afd199402838f346e61d61825332f1a5c',1,'NodeUML.IdHandler.GetInstance()']]],
+  ['getnodeatposition_64',['GetNodeAtPosition',['../class_game_board.html#ab185a290fb76d13ef647f6398e1db279',1,'GameBoard']]],
+  ['getnodeinfoitemid_65',['GetNodeInfoItemID',['../class_node_u_m_l_1_1_id_handler.html#adf11ccc5a1a1f5afc1c0eb9731a891f2',1,'NodeUML::IdHandler']]],
+  ['getportal_66',['GetPortal',['../class_game_board.html#a532c68c01f1300e967d3256cc9b3c437',1,'GameBoard']]],
+  ['getshortestpath_67',['GetShortestPath',['../class_path_finding.html#a0bf0fffb6b4c1aedf0af186880c7edad',1,'PathFinding']]],
+  ['getsnapshotid_68',['GetSnapShotID',['../class_node_u_m_l_1_1_id_handler.html#ae4c638b3e5cbf0230ddc1ff41e4fbe84',1,'NodeUML::IdHandler']]],
+  ['getusecaseid_69',['GetUseCaseID',['../class_node_u_m_l_1_1_id_handler.html#a8acf10cf27100bfbf7107d386c7298df',1,'NodeUML::IdHandler']]],
+  ['ghost_70',['Ghost',['../class_ghost.html',1,'']]],
+  ['ghost_2ecs_71',['Ghost.cs',['../_ghost_8cs.html',1,'']]],
+  ['graph_72',['graph',['../class_path_finding.html#ac6bd4b9f5532f4360bddd0029b506b45',1,'PathFinding']]]
 ];
