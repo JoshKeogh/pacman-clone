@@ -61,7 +61,8 @@ public class Ghost : MonoBehaviour
         pacMan = GameObject.FindGameObjectWithTag("PacMan");
         board = GameObject.FindGameObjectWithTag("Board").GetComponent<GameBoard> ();
         navigation = GameObject.FindGameObjectWithTag("Board").GetComponent<PathFinding> ();
-        direction = (targetNode.transform.position- transform.localPosition).normalized;
+        targetNode = ChooseNextNode();
+        direction = (targetNode.transform.position - transform.localPosition).normalized;
     }
 
     /// <summary>
@@ -73,7 +74,6 @@ public class Ghost : MonoBehaviour
     void Update()
     {
         Move();
-        
     }
 
     /// <summary>
@@ -89,13 +89,15 @@ public class Ghost : MonoBehaviour
     {
         if (targetNode == null) {
             targetNode = ChooseNextNode();
+            if (targetNode != null) {
+                direction = (targetNode.transform.position - transform.localPosition).normalized;
+            }
 
         } else if (targetNode != currentNode) {
 
-            if (board.OverShotTarget(transform.localPosition, targetNode, previousNode)) {
-                Node otherPortal = board.GetPortal((Vector2)targetNode.transform.position);
-                if (otherPortal != null) {
-                    currentNode = otherPortal;
+            if (OverShotTarget(transform.localPosition, targetNode, previousNode)) {
+                if (targetNode.isPortal) {
+                    currentNode = targetNode.portalReceiver;
                 } else {
                     currentNode = targetNode;
                 }
@@ -104,28 +106,28 @@ public class Ghost : MonoBehaviour
                 
                 previousNode = currentNode;
                 targetNode = ChooseNextNode();
-                currentNode = null;
                 
                 if (targetNode != null) {
                     direction = (targetNode.transform.position - transform.localPosition).normalized;
+                    currentNode = null;
                 }
             } else {
 
-                transform.localPosition += (Vector3)(direction * speed * Time.deltaTime);
+                transform.localPosition += (Vector3)(direction.normalized * speed * Time.deltaTime);
             }
         }
     }
 
     protected Node ChooseNextNode()
     {
-        Node target;
+        Node target = null;
 
         PacMan pm = pacMan.GetComponent<PacMan> ();
-        if (pm.targetNode != null) {
+        if (pm.targetNode != null && pm.targetNode != currentNode) {
             target = pm.targetNode;
         } else if (pm.currentNode != null) {
             target = pm.currentNode;
-        } else {
+        } else if (currentNode != pm.previousNode) {
             target = pm.previousNode;
         }
 
@@ -138,4 +140,43 @@ public class Ghost : MonoBehaviour
 
         return target;
     }
+
+    /// <summary>
+    /// Determines whether the character moved too far and overshot their target node.
+    /// </summary>
+    /// <return>
+    /// Whether or not the character has travelled past their destination.
+    /// </return>
+    /// <pre>
+    /// The previousNode exists.
+    /// </pre>
+    /// <pre>
+    /// A target node has been set.
+    /// </pre>
+    public bool OverShotTarget(Vector2 position, Node target, Node previous)
+    {
+        float nodeToTarget = LengthFromNode(target.transform.position, previous);
+        float nodeToSelf = LengthFromNode(position, previous);
+
+        return nodeToSelf > nodeToTarget;
+    }
+
+    /// <summary>
+    /// Calculate the distance between the previous node and a position.
+    /// </summary>
+    /// <param>
+    /// Position on the game board to be checked.
+    /// </param>
+    /// <return>
+    /// The distance between the target position and previous node.
+    /// </return>
+    /// <pre>
+    /// The node exists.
+    /// </pre>
+    public float LengthFromNode(Vector2 pos, Node node)
+    {
+        Vector2 diff = pos - (Vector2)node.transform.position;
+        return diff.sqrMagnitude;
+    }
+
 }

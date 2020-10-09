@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -13,7 +14,9 @@ using TMPro;
 /// </summary>
 public class GameBoard : MonoBehaviour
 {
+    [SerializeField]
     private static int boardWidth = 28;
+    [SerializeField]
     private static int boardHeight = 36;
 
     /// <summary>
@@ -22,11 +25,6 @@ public class GameBoard : MonoBehaviour
     /// <value>
     /// Count of pellets in the maze.
     /// </value>
-    public int dotsRemaining
-    {
-        get { return _dotsRemaining; }
-    }
-    private int _dotsRemaining;
     public int totalDots;
 
     /// <summary>
@@ -45,10 +43,16 @@ public class GameBoard : MonoBehaviour
     public TextMeshProUGUI livesText;
 
     /// An array referencing nodes within the game board.
-    private static GameObject[,] nodes = new GameObject[boardWidth, boardHeight];
+    private static List<GameObject> nodes = new List<GameObject> ();
 
     // An array referencing the pellets within the maze.
-    private static GameObject[,] dots = new GameObject[boardWidth, boardHeight];
+    private static List<GameObject> dots = new List<GameObject> ();
+    
+    // A reference to the player
+    private GameObject pacMan;
+
+    // A reference to the ghost(s)
+    private List<GameObject> ghosts = new List<GameObject> ();
 
 
     /// <summary>
@@ -68,21 +72,42 @@ public class GameBoard : MonoBehaviour
     void Start()
     {
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Dot");
-        _dotsRemaining = 0;
         foreach (GameObject obj in objects) {
-            dots[Mathf.RoundToInt(obj.transform.position.x), Mathf.RoundToInt(obj.transform.position.y)] = obj;
-            _dotsRemaining++;
+            if (obj != null) {
+                dots.Add(obj);
+            }
         }
-        totalDots = _dotsRemaining;
+        dots = dots.OrderBy(m => m.transform.position.x).ThenBy(m => m.transform.position.y).ToList();
+        totalDots = dots.Count;
         score = 0;
-
+        
         objects = GameObject.FindGameObjectsWithTag("Node");
         foreach (GameObject obj in objects) {
-            nodes[(int)obj.transform.position.x, (int)obj.transform.position.y] = obj;
+            if (obj != null) {
+                nodes.Add(obj);
+            }
+        }
+        nodes = nodes.OrderBy(m => m.transform.position.x).ThenBy(m => m.transform.position.y).ToList();
+
+        pacMan = GameObject.FindGameObjectWithTag("PacMan");
+
+        objects = GameObject.FindGameObjectsWithTag("Ghost");
+        foreach (GameObject obj in objects) {
+            if (obj != null) {
+                ghosts.Add(obj);
+            }
         }
     }
 
     void Update()
+    {
+        UpdateTimer();
+        if (dots.Count > 0) {
+            ConsumeAtPosition((Vector2)pacMan.transform.position);
+        }
+    }
+
+    void UpdateTimer()
     {
         elapsedTime += Time.deltaTime;
         TimeSpan t = TimeSpan.FromSeconds(elapsedTime);
@@ -104,70 +129,25 @@ public class GameBoard : MonoBehaviour
     /// <pre>
     /// The parameter is a valid position on the board.
     /// </pre>
-    public GameObject ConsumeAtPosition(Vector2 pos)
+    public void ConsumeAtPosition(Vector2 pos)
     {
-        GameObject obj = dots[Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y)];
+        GameObject obj = dots.FirstOrDefault(m => (pos - (Vector2)m.transform.position).sqrMagnitude < 1f); // = dot[Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y)];
 
         if (obj != null) {
             Consumable pellet = obj.GetComponent<Consumable> ();
 
             if (pellet != null && !pellet.didConsume) {
-                obj.GetComponent<SpriteRenderer> ().enabled = false;
                 pellet.didConsume = true;
+                obj.GetComponent<SpriteRenderer> ().enabled = false;
                 
                 score += pellet.pointsValue;
                 scoreText.text = score.ToString();
 
-                _dotsRemaining--;
+                dots.Remove(obj);
             }
         }
-
-        return obj;
     }
 
-    /// <summary>
-    /// Find the node which is at a position on the game board.
-    /// </summary>
-    /// <param>
-    /// The position within the game board to be checked.
-    /// </param>
-    /// <return>
-    /// The node which was found at the specified position within the maze, or null if none was found.
-    /// </return>
-    /// <pre>
-    /// GameBoard.board array has been populated with the maze's nodes.
-    /// </pre>
-    public Node GetNodeAtPosition(Vector2 pos)
-    {
-        GameObject obj = nodes[Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y)];
-        return obj.GetComponent<Node> ();
-    }
-    
-    /// <summary>
-    /// Mazes may have nodes which teleport characters to the other side of a maze. This checks whether a position corresponds to a teleporting node and retrieves the destination portal node.
-    /// </summary>
-    /// <param>
-    /// The relevant position on the game board.
-    /// </param>
-    /// <return>
-    /// If the position corresponds to a portal node, returns the corresponding destination portal node, otherwise null.
-    /// </return>
-    /// <pre>
-    /// GameBoard.board array has been populated with the maze's nodes.
-    /// </pre>
-    /// <pre>
-    /// Portal nodes have been connected to their corresponding destination node.
-    /// </pre>
-    public Node GetPortal(Vector2 pos)
-    {
-        Node node = nodes[(int)pos.x, (int)pos.y].GetComponent<Node> ();
-
-        if (node != null && node.isPortal) {
-            return node.portalReceiver;
-        }
-        
-        return null;
-    }
     
     /// <summary>
     /// Determines whether the character moved too far and overshot their target node.

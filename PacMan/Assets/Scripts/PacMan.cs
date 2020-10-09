@@ -16,8 +16,6 @@ public class PacMan : MonoBehaviour
     /// </value>
     public float speed = 7.0f;
 
-    public int lives = 3;
-
     /// <summary>
     /// The Node at which the player starts when the level begins, determining their position.
     /// </summary>
@@ -33,9 +31,10 @@ public class PacMan : MonoBehaviour
 
     // Objects for keeping track of how the player navigates the maze.
     private Vector2 nextDirection, direction = Vector2.zero;
-    // A reference to the level
-    private GameBoard board;
 
+    [SerializeField]
+    private float turnThreshold = 89f;
+    
 
     /// <summary>
     /// The Start() function is called before the first frame update and is used as a constructor to set the currentNode.
@@ -45,15 +44,6 @@ public class PacMan : MonoBehaviour
     /// </pre>
     void Start()
     {
-        board = GameObject.FindGameObjectWithTag("Board").GetComponent<GameBoard> ();
-
-        if (currentNode == null) {
-            Node node = board.GetNodeAtPosition((Vector2)transform.localPosition);
-
-            if (node != null) {
-                currentNode = node;
-            }
-        }
         previousNode = currentNode;
     }
 
@@ -70,9 +60,7 @@ public class PacMan : MonoBehaviour
     {
         CheckInput();
         Move();
-        UpdateOrientation();
-        UpdateAnimationState();
-        ConsumePellet();
+        UpdateCharacter();
     }
 
     /// <summary>
@@ -98,7 +86,7 @@ public class PacMan : MonoBehaviour
     }
 
     /// <summary>
-    /// Update the direction in which the player has indicated theyD would like to travel once reaching the next node.
+    /// Update the direction in which the player has indicated they would like to travel once reaching the next node.
     /// </summary>
     /// <param>
     /// The direction in which the user has indicated they would like to change to.
@@ -115,16 +103,15 @@ public class PacMan : MonoBehaviour
             nextDirection = dir;
         }
 
-        if (currentNode != null)
-        {
+        if (currentNode != null) {
+
             Node moveToNode = CanMove(dir);
-
+            
             if (moveToNode != null) {
-
-                direction = dir;
                 targetNode = moveToNode;
                 previousNode = currentNode;
                 currentNode = null;
+                direction = dir;
             }
         }
     }
@@ -143,7 +130,7 @@ public class PacMan : MonoBehaviour
     /// </post>
     void Move()
     {
-        if (targetNode != currentNode && targetNode != null) {
+        if (targetNode != null && targetNode != currentNode) {
 
             if (nextDirection == -direction) {
                 direction *= -1;
@@ -153,20 +140,18 @@ public class PacMan : MonoBehaviour
                 previousNode = tempNode;
             }
 
-            if (board.OverShotTarget(transform.localPosition, targetNode, previousNode)) {
-                currentNode = targetNode;
-                transform.localPosition = currentNode.transform.position;
-
-                Node otherPortal = board.GetPortal(currentNode.transform.position);
-                if (otherPortal != null) {
-                    transform.localPosition = otherPortal.transform.position;
-                    currentNode = otherPortal;
+            if (OverShotTarget(targetNode, previousNode)) {
+                if (targetNode.isPortal) {
+                    currentNode = targetNode.portalReceiver;
+                } else {
+                    currentNode = targetNode;
                 }
+                transform.localPosition = currentNode.transform.position;
 
                 Node moveToNode = CanMove(nextDirection);
 
                 if (moveToNode == null) {
-                    moveToNode = CanMove (direction);
+                    moveToNode = CanMove(direction);
                 } else {
                     direction = nextDirection;
                 }
@@ -181,7 +166,8 @@ public class PacMan : MonoBehaviour
                     direction = Vector2.zero;
                 }
             } else {
-                transform.localPosition += (Vector3)(direction * speed * Time.deltaTime);
+                Vector2 dir = ((Vector2)(targetNode.transform.position - transform.position)).normalized;
+                transform.localPosition += (Vector3)(dir * speed * Time.deltaTime);
             }
         }
     }
@@ -203,6 +189,34 @@ public class PacMan : MonoBehaviour
     /// </pre>
     Node CanMove(Vector2 dir)
     {
+        /*
+        Node closestTarget = null;
+        float angle, smallestAngle = 181f;
+
+        Node node = null;
+        if (targetNode != null) {
+            node = targetNode;
+        } else if (currentNode != null) {
+            node = currentNode;
+        } else if (previousNode != null) {
+            node = previousNode;
+        }
+
+        for (int i = 0; i < node.neighbours.Length; i++) {
+            angle = Vector2.Angle(dir, node.validDirections[i]);
+            if (angle < smallestAngle) {
+                smallestAngle = angle;
+                closestTarget = node.neighbours[i];
+            }
+        }
+        
+        if (smallestAngle < turnThreshold) {
+            return closestTarget;
+        }
+
+        return null;
+        */
+
         Node moveToNode = null;
 
         for (int i = 0; i < currentNode.neighbours.Length; i++) {
@@ -216,16 +230,29 @@ public class PacMan : MonoBehaviour
     }
 
     /// <summary>
-    /// Updates the rotation of PacMan so that the sprite to correspond to the direction of travel.
+    /// Updates the rotation of PacMan so that the sprite to correspond to the direction of travel. When PacMan stops moving this function changes his sprite to its idle animation, and changes it back again once he starts moving.
     /// </summary>
     /// <pre>
     /// The direction object points in a cardinal direction.
     /// </pre>
+    /// <pre>
+    /// PacMan has an idle sprite in addition to his default animator.
+    /// </pre>
     /// <post>
     /// PacMan's sprite has been oriented to a valid direction without skewing it.
     /// </post>
-    void UpdateOrientation()
+    /// <post>
+    /// PacMan has had a valid animator enabled.
+    /// </post>
+    void UpdateCharacter()
     {
+        if (direction == Vector2.zero) {
+            GetComponent<Animator> ().enabled = false;
+            GetComponent<SpriteRenderer> ().sprite = idleSprite;
+        } else {
+            GetComponent<Animator> ().enabled = true;
+        }
+
         if (direction == Vector2.left) {
 
             transform.localScale = new Vector3(-1, 1, 1);
@@ -247,41 +274,32 @@ public class PacMan : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 0, 270);
         }
     }
-
+    
+    
     /// <summary>
-    /// When PacMan stops moving this function changes his sprite to its idle animation, and changes it back again once he starts moving.
+    /// Determines whether the character moved too far and overshot their target node.
     /// </summary>
+    /// <return>
+    /// Whether or not the character has travelled past their destination.
+    /// </return>
     /// <pre>
-    /// PacMan has an idle sprite in addition to his default animator.
+    /// The previousNode exists.
     /// </pre>
-    /// <post>
-    /// PacMan has had a valid animator enabled.
-    /// </post>
-    void UpdateAnimationState()
-    {
-        if (direction == Vector2.zero) {
-            GetComponent<Animator> ().enabled = false;
-            GetComponent<SpriteRenderer> ().sprite = idleSprite;
-        } else {
-            GetComponent<Animator> ().enabled = true;
-        }
-    }
-
-    /// <summary>
-    /// Determine whether a consumable is located at PacMan's current position, and consume it.
-    /// </summary>
     /// <pre>
-    /// The GameBoard has successfully initialized.
+    /// A target node has been set.
     /// </pre>
-    /// <post>
-    /// A consumed pellet is removed from the game board so it is not able to be eaten again.
-    /// </post>
-    void ConsumePellet()
+    public bool OverShotTarget(Node target, Node previous)
     {
-        board.ConsumeAtPosition(transform.position);
+        /*
+        Vector2 diff = target.transform.position - previous.transform.position;
+        float nodeToTarget = diff.sqrMagnitude;
 
-        if (board.dotsRemaining <= 0) {
-            Debug.Log("Game Won!");
-        }
+        diff = transform.position - previous.transform.position;
+        float nodeToSelf = diff.sqrMagnitude;
+        
+        return nodeToSelf > nodeToTarget;
+        */
+        return  (float) ((Vector2)(transform.position - previous.transform.position)).sqrMagnitude
+                > (float) ((Vector2)(target.transform.position - previous.transform.position)).sqrMagnitude;
     }
 }
