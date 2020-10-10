@@ -15,9 +15,10 @@ using TMPro;
 public class GameBoard : MonoBehaviour
 {
     [SerializeField]
-    private static int boardWidth = 28;
+    public int boardWidth = 28;
     [SerializeField]
-    private static int boardHeight = 36;
+    public int boardHeight = 36;
+    public TextMeshProUGUI dimensionsText;
 
     /// <summary>
     /// The total number of dots or pellets in the maze, which PacMan will need to consume to beat the level.
@@ -33,14 +34,19 @@ public class GameBoard : MonoBehaviour
     /// <value>
     /// The player's score.
     /// </value>
-    public int score = 0;
+    private int score = 0;
     public TextMeshProUGUI scoreText;
 
-    public double elapsedTime = 0f;
+    private double elapsedTime = 0f;
     public TextMeshProUGUI timerText;
 
-    public int lives = 3;
+    private int lives = 3;
     public TextMeshProUGUI livesText;
+    private bool gameOver = false;
+
+    public GameObject gameOverMenu;
+    public TextMeshProUGUI gameOverText;
+    public TextMeshProUGUI gameOverScoreText;
 
     /// An array referencing nodes within the game board.
     private static List<GameObject> nodes = new List<GameObject> ();
@@ -51,8 +57,14 @@ public class GameBoard : MonoBehaviour
     // A reference to the player
     private GameObject pacMan;
 
+    // When the ghosts collide with pacman he is invincible for a moment, and can consume ghost if ate super pellet
+    private bool pacManInvincible = false, pacManSuperPellet = false;
+    private float stateChangeTimeDelay = 3f;
+
     // A reference to the ghost(s)
     private List<GameObject> ghosts = new List<GameObject> ();
+
+    private const float collisionDistance = 1f;
 
 
     /// <summary>
@@ -97,15 +109,77 @@ public class GameBoard : MonoBehaviour
                 ghosts.Add(obj);
             }
         }
+
+        dimensionsText.text = string.Format("{0} x {1}", boardWidth, boardHeight);
+        gameOverMenu.SetActive(false);
+        gameOver = false;
     }
 
     void Update()
     {
-        UpdateTimer();
-        if (dots.Count > 0) {
-            ConsumeAtPosition((Vector2)pacMan.transform.position);
+        if (!gameOver) {
+            UpdateTimer();
+
+            if (dots.Count > 0) {
+                ConsumeAtPosition((Vector2)pacMan.transform.position);
+            } else {
+                GameOver(true);
+            }
+
+            foreach (GameObject ghost in ghosts) {
+                if (((Vector2)(pacMan.transform.position - ghost.transform.position)).sqrMagnitude < collisionDistance) {
+                    if (!pacManInvincible) {
+                        LoseLife(ghost);
+                        break;
+                    }/* else if (pacManSuperPellet) {
+                        ConsumeGhost(ghost);
+                    }*/
+                }
+            }
         }
     }
+
+    private void LoseLife(GameObject ghost)
+    {
+        if (lives <= 0) {
+            GameOver(false);
+        } else {
+            lives -= 1;
+            livesText.text = string.Format("{0}", lives);
+
+            StartCoroutine(SetPacManState(true, false, stateChangeTimeDelay));
+        }
+    }
+
+    private IEnumerator SetPacManState(bool invincible, bool superPellet, float waitTime)
+    {
+        pacManInvincible = invincible;
+        pacManSuperPellet = superPellet;
+
+        yield return new WaitForSeconds(waitTime);
+
+        pacManInvincible = false;
+        superPellet = false;
+    }
+
+    private void GameOver(bool wonGame)
+    {
+        Time.timeScale = 0f;
+        gameOverMenu.SetActive(true);
+        gameOver = true;
+
+        if (!wonGame) {
+            gameOverText.text = string.Format("Game Over\nSorry, you lose!");
+        } else {
+            float dimensions = (float)(boardWidth * boardHeight);
+            float scoreBonus = dimensions / (float)elapsedTime;
+            float finalScore = (float)score + scoreBonus;
+            gameOverText.text = string.Format("Game Over\nCongrats!");
+            gameOverScoreText.text = string.Format("Bonus score = width * height / time\nscore = {0} + {1} * {2} / {3}\n= {4}", score, boardWidth, boardHeight, elapsedTime, finalScore);
+            score = Mathf.RoundToInt(finalScore);
+        }
+    }
+
 
     void UpdateTimer()
     {
@@ -114,6 +188,11 @@ public class GameBoard : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", t.Minutes, t.Seconds);
     }
     
+    public void ConsumeGhost(GameObject ghost)
+    {
+        return;
+    }
+
     /// <summary>
     /// Retrieves the pellet object at a particular position on the game board.
     /// </summary>
@@ -129,75 +208,31 @@ public class GameBoard : MonoBehaviour
     /// <pre>
     /// The parameter is a valid position on the board.
     /// </pre>
-    public void ConsumeAtPosition(Vector2 pos)
+    public bool ConsumeAtPosition(Vector2 pos)
     {
-        GameObject obj = dots.FirstOrDefault(m => (pos - (Vector2)m.transform.position).sqrMagnitude < 1f); // = dot[Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y)];
+        GameObject obj = dots.FirstOrDefault(m => (pos - (Vector2)m.transform.position).sqrMagnitude < collisionDistance); // = dot[Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y)];
 
         if (obj != null) {
             Consumable pellet = obj.GetComponent<Consumable> ();
 
             if (pellet != null && !pellet.didConsume) {
                 pellet.didConsume = true;
+
+                if (pellet.isSuperPellet) {
+                    StartCoroutine(SetPacManState(true, true, stateChangeTimeDelay));
+                }
+
                 obj.GetComponent<SpriteRenderer> ().enabled = false;
                 
                 score += pellet.pointsValue;
                 scoreText.text = score.ToString();
 
                 dots.Remove(obj);
+
+                return true;
             }
         }
-    }
 
-    
-    /// <summary>
-    /// Determines whether the character moved too far and overshot their target node.
-    /// </summary>
-    /// <return>
-    /// Whether or not the character has travelled past their destination.
-    /// </return>
-    /// <pre>
-    /// The previousNode exists.
-    /// </pre>
-    /// <pre>
-    /// A target node has been set.
-    /// </pre>
-    public bool OverShotTarget(Vector2 position, Node target, Node previous)
-    {
-        float nodeToTarget = LengthFromNode(target.transform.position, previous);
-        float nodeToSelf = LengthFromNode(position, previous);
-
-        return nodeToSelf > nodeToTarget;
-    }
-
-    /// <summary>
-    /// Calculate the distance between the previous node and a position.
-    /// </summary>
-    /// <param>
-    /// Position on the game board to be checked.
-    /// </param>
-    /// <return>
-    /// The distance between the target position and previous node.
-    /// </return>
-    /// <pre>
-    /// The node exists.
-    /// </pre>
-    public float LengthFromNode(Vector2 pos, Node node)
-    {
-        Vector2 diff = pos - (Vector2)node.transform.position;
-        return diff.sqrMagnitude;
-    }
-
-    /// <summary>
-    /// Find the distance between two points.
-    /// </summary>
-    /// <param>
-    /// The two positions to check. Order does not matter.
-    /// </param>
-    /// <return>
-    /// The distance between the two points.
-    /// </return>
-    public float GetDistance(Vector2 posA, Vector2 posB)
-    {
-        return (posB - posA).magnitude;
+        return false;
     }
 }

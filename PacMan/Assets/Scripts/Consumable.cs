@@ -6,4 +6,5 @@ public class Consumable : MonoBehaviour
 {
     public bool didConsume;
     public int pointsValue;
+    public bool isSuperPellet = false;
 }

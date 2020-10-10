@@ -37,17 +37,6 @@ public class PacMan : MonoBehaviour
     
 
     /// <summary>
-    /// The Start() function is called before the first frame update and is used as a constructor to set the currentNode.
-    /// </summary>
-    /// <pre>
-    /// The system has loaded PacMan into a level which represents the maze as a node-based graph.
-    /// </pre>
-    void Start()
-    {
-        previousNode = currentNode;
-    }
-
-    /// <summary>
     /// The Update() function is called once per frame. It will check whether the player has provided input, then move the character and update its graphics, then handle collisions with consumables.
     /// </summary>
     /// <pre>
