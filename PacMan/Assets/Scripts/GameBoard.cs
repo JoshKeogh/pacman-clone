@@ -15,9 +15,9 @@ using TMPro;
 public class GameBoard : MonoBehaviour
 {
     [SerializeField]
-    public int boardWidth = 28;
+    private int boardWidth = 28;
     [SerializeField]
-    public int boardHeight = 36;
+    private int boardHeight = 36;
     public TextMeshProUGUI dimensionsText;
 
     /// <summary>
@@ -169,14 +169,13 @@ public class GameBoard : MonoBehaviour
         gameOver = true;
 
         if (!wonGame) {
-            gameOverText.text = string.Format("Game Over\nSorry, you lose!");
+            gameOverText.text = string.Format("Game Over\nYou lost!");
         } else {
-            float dimensions = (float)(boardWidth * boardHeight);
-            float scoreBonus = dimensions / (float)elapsedTime;
-            float finalScore = (float)score + scoreBonus;
+            int scoreBonus = Mathf.RoundToInt((float)Math.Pow(boardWidth * boardHeight / elapsedTime, 2));
+            int finalScore = score + scoreBonus;
             gameOverText.text = string.Format("Game Over\nCongrats!");
-            gameOverScoreText.text = string.Format("Bonus score = width * height / time\nscore = {0} + {1} * {2} / {3}\n= {4}", score, boardWidth, boardHeight, elapsedTime, finalScore);
-            score = Mathf.RoundToInt(finalScore);
+            gameOverScoreText.text = string.Format("Bonus = (width * height / time)^2\n= ({0} * {1} / {2})^2 = {3}\nscore = {4} + {3}\n= {5}", boardWidth, boardHeight, Mathf.RoundToInt((float)elapsedTime), scoreBonus, score, finalScore);
+            score = finalScore;
         }
     }
 
