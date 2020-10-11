@@ -49,10 +49,10 @@ public class GameBoard : MonoBehaviour
     public TextMeshProUGUI gameOverScoreText;
 
     /// An array referencing nodes within the game board.
-    private static List<GameObject> nodes = new List<GameObject> ();
+    private List<GameObject> nodes = new List<GameObject> ();
 
     // An array referencing the pellets within the maze.
-    private static List<GameObject> dots = new List<GameObject> ();
+    private List<GameObject> dots = new List<GameObject> ();
     
     // A reference to the player
     private GameObject pacMan;
